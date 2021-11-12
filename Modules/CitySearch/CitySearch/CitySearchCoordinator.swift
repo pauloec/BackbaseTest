@@ -15,6 +15,9 @@ public class CitySearchCoordinator: CoordinatorType {
     }
 
     public func start() {
-
+        let viewModel = CitySearchViewModel()
+        let viewController = CitySearchViewController()
+        viewController.configViewModel(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
