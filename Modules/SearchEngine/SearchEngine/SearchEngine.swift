@@ -7,6 +7,11 @@
 
 import Foundation
 
+public enum EngineError: Error {
+    case runtimeError(String)
+    case fileNotFound(String)
+}
+
 final public class SearchEngine {
     private static var sharedEngine: SearchEngine = {
         let searchEngine = SearchEngine()

@@ -7,13 +7,8 @@
 
 import Foundation
 
-public enum EngineError: Error {
-    case runtimeError(String)
-    case fileNotFound(String)
-}
-
-public struct Parser {
-    static public func parseCities(completion: (Array<CityModel>) -> Void, failure: (EngineError) -> Void) {
+struct Parser {
+    static func parseCities(completion: (Array<CityModel>) -> Void, failure: (EngineError) -> Void) {
         if let path = Bundle.SearchEngineResourceBundle().path(forResource: "cities", ofType: "json") {
             do {
                 let start = DispatchTime.now()
