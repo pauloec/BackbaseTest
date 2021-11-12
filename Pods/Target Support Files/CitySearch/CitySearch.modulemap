@@ -1,0 +1,6 @@
+framework module CitySearch {
+  umbrella header "CitySearch-umbrella.h"
+
+  export *
+  module * { export * }
+}

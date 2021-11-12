@@ -1,0 +1,22 @@
+PODS:
+  - CitySearch (0.1.0):
+    - Core
+  - Core (0.1.0)
+
+DEPENDENCIES:
+  - CitySearch (from `Modules/CitySearch`)
+  - Core (from `Modules/Core`)
+
+EXTERNAL SOURCES:
+  CitySearch:
+    :path: Modules/CitySearch
+  Core:
+    :path: Modules/Core
+
+SPEC CHECKSUMS:
+  CitySearch: b4d38b6065320e8001f843d95e4cb9b19292587f
+  Core: e1b4337d835905189b352001509b84a2e83ac0d8
+
+PODFILE CHECKSUM: 896fac5c9be22e48a25fe4441fa33a633d14e31f
+
+COCOAPODS: 1.11.2

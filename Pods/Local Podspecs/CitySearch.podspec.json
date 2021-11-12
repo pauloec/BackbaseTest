@@ -1,0 +1,34 @@
+{
+  "name": "CitySearch",
+  "version": "0.1.0",
+  "summary": "A short description of CitySearch.",
+  "description": "CitySearch module",
+  "homepage": "http://10.0.0.10/SuperApp/iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "paulo.ec@hotmail.com": "paulo.ec@hotmail.com"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "CitySearch/**/*",
+  "resource_bundles": {
+    "CitySearch": [
+      "Assets/**/*.{png,xcassets,json,txt,storyboard,xib,xcdatamodeld,strings}"
+    ]
+  },
+  "dependencies": {
+    "Core": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}
