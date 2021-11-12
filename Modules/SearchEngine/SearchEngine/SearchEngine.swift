@@ -96,9 +96,11 @@ final public class SearchEngine {
                         } else {
                             hasFoundLower = true
 
-                            for index in (middleIndex...list.endIndex - 1).reversed() {
-                                if list[index].name.lowercased().hasPrefix(input.lowercased()) {
-                                    upperBound = index
+                            for innerIndex in (middleIndex...list.endIndex - 1).reversed() {
+                                if list[innerIndex].name.lowercased().hasPrefix(input.lowercased()) {
+                                    upperBound = innerIndex
+
+                                    hasFoundLower = innerIndex == list.endIndex - 1
                                 } else {
                                     hasFoundUpper = true
                                     break
@@ -115,9 +117,11 @@ final public class SearchEngine {
                         } else {
                             hasFoundUpper = true
 
-                            for index in (list.startIndex...middleIndex).reversed() {
-                                if list[index].name.lowercased().hasPrefix(input.lowercased()) {
-                                    lowerBound = index
+                            for innerIndex in (list.startIndex...middleIndex).reversed() {
+                                if list[innerIndex].name.lowercased().hasPrefix(input.lowercased()) {
+                                    lowerBound = innerIndex
+
+                                    hasFoundLower = innerIndex == list.startIndex
                                 } else {
                                     hasFoundLower = true
                                     break
