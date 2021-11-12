@@ -9,6 +9,8 @@ import Core
 import SearchEngine
 
 class CitySearchViewModel: ViewModelType {
+    private let searchEngine = SearchEngine.shared()
+
     struct Input {
 
     }
@@ -23,15 +25,9 @@ class CitySearchViewModel: ViewModelType {
         input = Input()
         output = Output()
 
-        Parser.parseCities(completion: { [weak self] cities in
-            //
-        }, failure: { error in
-            switch error {
-            case .runtimeError(let error):
-                print(error)
-            case .fileNotFound(let error):
-                print(error)
-            }
+        searchEngine.searchCity(input: "Porto", completion: { [weak self] cities in
+            let cityNames = cities.map { $0.name }
+            print(cityNames)
         })
     }
 }
