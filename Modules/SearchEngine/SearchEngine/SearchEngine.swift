@@ -87,6 +87,7 @@ final public class SearchEngine {
         var hasFoundUpper: Bool = false
 
         while hasFoundLower == false && hasFoundUpper == false {
+            guard lowerBound <= upperBound else { break }
             if list[middleIndex].name.lowercased().hasPrefix(input.lowercased()) {
                 if (input.lowercased() > list[middleIndex].name.lowercased()) {
                     for index in (middleIndex...list.startIndex) {
@@ -139,7 +140,9 @@ final public class SearchEngine {
         }
 
         filteredList.removeAll(keepingCapacity: false)
-        filteredList.append(contentsOf: list[lowerBound...upperBound])
+        if hasFoundLower && hasFoundUpper {
+            filteredList.append(contentsOf: list[lowerBound...upperBound])
+        }
 
         let end = DispatchTime.now()
 
