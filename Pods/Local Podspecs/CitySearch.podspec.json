@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of CitySearch.",
   "description": "CitySearch module",
-  "homepage": "http://10.0.0.10/SuperApp/iOS",
+  "homepage": "http://github.com/pauloec",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -27,6 +27,9 @@
   },
   "dependencies": {
     "Core": [
+
+    ],
+    "SearchEngine": [
 
     ]
   },

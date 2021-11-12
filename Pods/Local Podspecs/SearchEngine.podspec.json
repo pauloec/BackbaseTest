@@ -1,0 +1,29 @@
+{
+  "name": "SearchEngine",
+  "version": "0.1.0",
+  "summary": "A short description of SearchEngine.",
+  "description": "SearchEngine module",
+  "homepage": "http://github.com/pauloec",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "paulo.ec@hotmail.com": "paulo.ec@hotmail.com"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "SearchEngine/**/*",
+  "resource_bundles": {
+    "SearchEngine": [
+      "Assets/**/*.{png,xcassets,json,txt,storyboard,xib,xcdatamodeld,strings}"
+    ]
+  },
+  "swift_version": "5.0"
+}

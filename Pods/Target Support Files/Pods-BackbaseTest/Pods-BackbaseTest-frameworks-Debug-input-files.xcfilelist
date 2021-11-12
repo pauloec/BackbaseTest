@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-BackbaseTest/Pods-BackbaseTest-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CitySearch/CitySearch.framework
 ${BUILT_PRODUCTS_DIR}/Core/Core.framework
+${BUILT_PRODUCTS_DIR}/SearchEngine/SearchEngine.framework
