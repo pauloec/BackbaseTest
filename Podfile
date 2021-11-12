@@ -7,7 +7,8 @@ target 'BackbaseTest' do
 
   # Pods for BackbaseTest
 
-  pod 'CitySearch', :path => 'Modules/CitySearch'
-  pod 'Core',       :path => 'Modules/Core'
+  pod 'CitySearch',   :path => 'Modules/CitySearch'
+  pod 'Core',         :path => 'Modules/Core'
+  pod 'SearchEngine', :path => 'Modules/SearchEngine'
 
 end

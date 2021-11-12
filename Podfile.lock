@@ -1,22 +1,28 @@
 PODS:
   - CitySearch (0.1.0):
     - Core
+    - SearchEngine
   - Core (0.1.0)
+  - SearchEngine (0.1.0)
 
 DEPENDENCIES:
   - CitySearch (from `Modules/CitySearch`)
   - Core (from `Modules/Core`)
+  - SearchEngine (from `Modules/SearchEngine`)
 
 EXTERNAL SOURCES:
   CitySearch:
     :path: Modules/CitySearch
   Core:
     :path: Modules/Core
+  SearchEngine:
+    :path: Modules/SearchEngine
 
 SPEC CHECKSUMS:
-  CitySearch: b4d38b6065320e8001f843d95e4cb9b19292587f
+  CitySearch: d7b4572c1cfa834fa949a951a326975e8925986b
   Core: e1b4337d835905189b352001509b84a2e83ac0d8
+  SearchEngine: e72a757971f6fbfce3dee78cb471a644607788f6
 
-PODFILE CHECKSUM: 896fac5c9be22e48a25fe4441fa33a633d14e31f
+PODFILE CHECKSUM: e6e01f7ddb127301fc895d705afd5a700b2f82a2
 
 COCOAPODS: 1.11.2

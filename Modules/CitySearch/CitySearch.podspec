@@ -17,5 +17,6 @@ Pod::Spec.new do |s|
   }
   
   s.dependency 'Core'
+  s.dependency 'SearchEngine'
   
 end
