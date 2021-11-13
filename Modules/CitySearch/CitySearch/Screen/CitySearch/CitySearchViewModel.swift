@@ -11,23 +11,30 @@ import SearchEngine
 class CitySearchViewModel: ViewModelType {
     private let searchEngine = SearchEngine.shared()
 
-    struct Input {
+    private let didInputSearchBinder: Binder<String> = .init("")
+    private let citiesBinder: Binder<[CitySearchCellViewModel]> = .init([])
 
+    struct Input {
+        let didInputSearch: Binder<String>
     }
     struct Output {
-
+        let cities: Binder<[CitySearchCellViewModel]>
     }
 
     let input: Input
     let output: Output
 
     init() {
-        input = Input()
-        output = Output()
+        input = Input(didInputSearch: didInputSearchBinder)
+        output = Output(cities: citiesBinder)
 
-        searchEngine.searchCity(input: "Porto", completion: { [weak self] cities in
-            let cityNames = cities.map { $0.name }
-            print(cityNames)
+        didInputSearchBinder.bind(listener: { [weak self] text in
+            guard let self = self else { return }
+            self.searchEngine.searchCity(input: text,
+                                         completion: { cities in
+                let citiesViewModel = cities.map { CitySearchCellViewModel(city: $0) }
+                self.citiesBinder.value = citiesViewModel
+            })
         })
     }
 }
