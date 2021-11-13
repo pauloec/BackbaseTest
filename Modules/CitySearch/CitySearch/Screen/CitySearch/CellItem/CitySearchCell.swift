@@ -14,6 +14,19 @@ class CitySearchCell: UITableViewCell {
         return label
     }()
 
+    private let coordinateLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 12)
+        return label
+    }()
+
+    private let pinImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage.image(named: "pin")
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+
     static let cellIdentifier = "SearchCellIdentifier"
     typealias ViewModelType = CitySearchCellViewModel
     private var viewModel: ViewModelType!
@@ -26,6 +39,7 @@ class CitySearchCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         selectionStyle = .none
+        accessoryType = .detailDisclosureButton
         setupViews()
     }
 }
@@ -37,17 +51,72 @@ extension CitySearchCell: ControllerType {
     }
 
     func setupViews() {
-        contentView.addSubview(nameLabel)
+        [nameLabel, pinImageView, coordinateLabel].forEach {
+            contentView.addSubview($0)
+        }
         nameLabel.anchor(top: contentView.safeAreaLayoutGuide.topAnchor,
                          leading: contentView.safeAreaLayoutGuide.leadingAnchor,
-                         bottom: contentView.safeAreaLayoutGuide.bottomAnchor,
+                         bottom: nil,
                          trailing: contentView.safeAreaLayoutGuide.trailingAnchor,
-                         padding: .init(top: 20, left: 20, bottom: 10, right: 20))
+                         padding: .init(top: LayoutConstraint.NameLabel.top,
+                                        left: LayoutConstraint.NameLabel.left,
+                                        bottom: LayoutConstraint.NameLabel.bottom,
+                                        right: LayoutConstraint.NameLabel.right))
+
+        pinImageView.anchor(top: nameLabel.bottomAnchor,
+                            leading: contentView.safeAreaLayoutGuide.leadingAnchor,
+                            bottom: contentView.safeAreaLayoutGuide.bottomAnchor,
+                            trailing: nil,
+                            padding: .init(top: LayoutConstraint.PinImageView.top,
+                                           left: LayoutConstraint.PinImageView.left,
+                                           bottom: LayoutConstraint.PinImageView.bottom,
+                                           right: LayoutConstraint.PinImageView.right),
+                            size: .init(width: LayoutConstraint.PinImageView.Size.width,
+                                        height: LayoutConstraint.PinImageView.Size.height))
+
+        coordinateLabel.anchor(top: pinImageView.topAnchor,
+                               leading: pinImageView.trailingAnchor,
+                               bottom: nil,
+                               trailing: contentView.safeAreaLayoutGuide.trailingAnchor,
+                               padding: .init(top: LayoutConstraint.CoordinateLabel.top,
+                                              left: LayoutConstraint.CoordinateLabel.left,
+                                              bottom: LayoutConstraint.CoordinateLabel.bottom,
+                                              right: LayoutConstraint.CoordinateLabel.right))
     }
 
     func bindViewModel() {
         viewModel.output.name.bind(listener: { [weak self] name in
             self?.nameLabel.text = name
         })
+        viewModel.output.coordinate.bind(listener: { [weak self] coordinate in
+            self?.coordinateLabel.text = coordinate
+        })
+    }
+}
+
+extension CitySearchCell {
+    struct LayoutConstraint {
+        struct NameLabel {
+            static let top: CGFloat = 20
+            static let left: CGFloat = 20
+            static let bottom: CGFloat = 10
+            static let right: CGFloat = 20
+        }
+        struct PinImageView {
+            static let top: CGFloat = 10
+            static let left: CGFloat = 20
+            static let bottom: CGFloat = 20
+            static let right: CGFloat = 20
+            struct Size {
+                static let width: CGFloat = 20
+                static let height: CGFloat = 20
+            }
+        }
+        struct CoordinateLabel {
+            static let top: CGFloat = 2
+            static let left: CGFloat = 0
+            static let bottom: CGFloat = 0
+            static let right: CGFloat = 0
+        }
     }
 }

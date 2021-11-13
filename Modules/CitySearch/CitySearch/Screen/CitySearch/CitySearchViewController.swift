@@ -16,7 +16,6 @@ class CitySearchViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.separatorStyle = .none
-        tableView.backgroundColor = .white
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 50
         tableView.register(CitySearchCell.self, forCellReuseIdentifier: CitySearchCell.cellIdentifier)
@@ -54,7 +53,6 @@ extension CitySearchViewController: ControllerType {
     }
 
     func setupViews() {
-        view.backgroundColor = .white
         navigationItem.titleView = searchBar
 
         view.addSubview(tableView)

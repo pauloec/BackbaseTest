@@ -10,21 +10,25 @@ import SearchEngine
 
 class CitySearchCellViewModel: ViewModelType {
     private let nameBinder: Binder<String>
+    private let coordinateBinder: Binder<String>
 
     struct Input {
 
     }
     struct Output {
         let name: Binder<String>
+        let coordinate: Binder<String>
     }
 
     let input: Input
     let output: Output
 
     init(city: CityModel) {
-        nameBinder = .init(city.name)
+        nameBinder = .init("\(city.name), \(city.country)")
+        coordinateBinder = .init("Latitidude: \(city.coord.lat) Longitude: \(city.coord.lon)")
 
         input = Input()
-        output = Output(name: nameBinder)
+        output = Output(name: nameBinder,
+                        coordinate: coordinateBinder)
     }
 }
