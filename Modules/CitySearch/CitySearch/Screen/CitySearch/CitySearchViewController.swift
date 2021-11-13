@@ -12,6 +12,7 @@ class CitySearchViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.showsVerticalScrollIndicator = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.contentInsetAdjustmentBehavior = .never
@@ -69,7 +70,7 @@ extension CitySearchViewController: ControllerType {
     }
 }
 
-extension CitySearchViewController: UITableViewDataSource {
+extension CitySearchViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.output.cities.value.count
     }
@@ -82,6 +83,10 @@ extension CitySearchViewController: UITableViewDataSource {
         let viewModel = viewModel.output.cities.value[indexPath.row]
         cell.configViewModel(viewModel: viewModel)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.input.didSelectCell.value = indexPath.row
     }
 }
 

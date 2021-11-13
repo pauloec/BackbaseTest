@@ -89,7 +89,7 @@ extension CitySearchCell: ControllerType {
             self?.nameLabel.text = name
         })
         viewModel.output.coordinate.bind(listener: { [weak self] coordinate in
-            self?.coordinateLabel.text = coordinate
+            self?.coordinateLabel.text = "Lat: \(coordinate.latitude) Lon: \(coordinate.longitude)"
         })
     }
 }
