@@ -10,12 +10,10 @@ import SearchEngine
 import CoreLocation
 
 class CitySearchViewModel: ViewModelType {
-    private let searchEngine = SearchEngine.shared()
-
     private let didInputSearchBinder: Binder<String> = .init("")
     private let didSelectCellBinder: Binder<Int?> = .init(nil)
 
-    private let citiesBinder: Binder<[CitySearchCellViewModel]> = .init([])
+    private let filteredViewModelBinder: Binder<[CitySearchCellViewModel]> = .init([])
     private let didSelectCoordinateBinder: Binder<CLLocationCoordinate2D?> = .init(nil)
 
     struct Input {
@@ -30,29 +28,46 @@ class CitySearchViewModel: ViewModelType {
     let input: Input
     let output: Output
 
+    // Internal Control
+    private let citiesViewModel: [CitySearchCellViewModel]
+
     init() {
         input = Input(didInputSearch: didInputSearchBinder,
                       didSelectCell: didSelectCellBinder)
-        output = Output(cities: citiesBinder,
+        output = Output(cities: filteredViewModelBinder,
                         didSelectCoordinate: didSelectCoordinateBinder)
+
+        guard let path = Bundle.CitySearchResourceBundle().path(forResource: "cities", ofType: "json"),
+              let parsedCities: [CityModel] = try? Parser.parseList(path: path) else {
+                  citiesViewModel = []
+                  print("uh.. oh no file!")
+                  return
+              }
+        let cities = parsedCities.sorted { $0.name < $1.name } 
+        citiesViewModel = cities.map { CitySearchCellViewModel(city: $0) }
+        filteredViewModelBinder.value = citiesViewModel
 
         observeBind()
     }
 
     private func observeBind() {
         didInputSearchBinder.bind(listener: { [weak self] text in
-            guard let self = self else { return }
-            self.searchEngine.searchCity(input: text,
-                                         completion: { cities in
-                let citiesViewModel = cities.map { CitySearchCellViewModel(city: $0) }
-                self.citiesBinder.value = citiesViewModel
+            guard let self = self, !text.isEmpty else {
+                self?.filteredViewModelBinder.value = self?.citiesViewModel ?? []
+                return
+            }
+
+            SearchEngine.search(input: text,
+                                list: self.citiesViewModel,
+                                completion: { list in
+                self.filteredViewModelBinder.value = list
             })
         })
-
-        didSelectCellBinder.bind(listener: { [weak self] index in
-            guard let self = self, let index = index else { return }
-            let cityViewModel = self.citiesBinder.value[index]
-            self.didSelectCoordinateBinder.value = cityViewModel.output.coordinate.value
-        })
+//
+//        didSelectCellBinder.bind(listener: { [weak self] index in
+//            guard let self = self, let index = index else { return }
+//            let cityViewModel = self.citiesBinder.value[index]
+//            self.didSelectCoordinateBinder.value = cityViewModel.output.coordinate.value
+//        })
     }
 }

@@ -7,133 +7,43 @@
 
 import Foundation
 
-public enum EngineError: Error {
-    case runtimeError(String)
-    case fileNotFound(String)
-}
-
-final public class SearchEngine {
-    private static var sharedEngine: SearchEngine = {
-        let searchEngine = SearchEngine()
-        return searchEngine
-    }()
-
-    class public func shared() -> SearchEngine {
-        return sharedEngine
-    }
-
-    private var cityList: Array<CityModel>
-    private var filteredList = Array<CityModel>.init()
-    private var isSearching: Bool = false
-    private var querySearch: String = ""
-    private var searchWorkItem: DispatchWorkItem?
-
-    private init() {
-        self.cityList = []
-
-        Parser.parseCities(completion: { [unowned self] cities in
-            self.cityList = cities.sorted { $0.name < $1.name }
-        }, failure: { error in
-            switch error {
-            case .runtimeError(let error):
-                print(error)
-            case .fileNotFound(let error):
-                print(error)
-            }
-        })
-    }
-
-    public func searchCity(input: String,
-                           completion: @escaping (Array<CityModel>) -> Void) {
-
-        // Reset search in case of empty request
-        if input.isEmpty {
-            self.isSearching = false
-            self.querySearch = ""
-            self.filteredList.removeAll(keepingCapacity: false)
-            completion(cityList)
-        } else {
-            let searchWork = DispatchWorkItem { [unowned self] in
-                self.isSearching = true
-                // If we're narrowing down the search, we reuse the already filtered result
-                self.filter(input: input, list: input.contains(self.querySearch) ? self.filteredList : self.cityList)
-
-                DispatchQueue.main.async {
-                    completion(filteredList)
-                }
-
-                self.searchWorkItem = nil
-            }
-
-            searchWorkItem = searchWork
-            let dispatchQueue = DispatchQueue(label: "Filter.array")
-
-            // We filter valid search requests
-            dispatchQueue.async(execute: searchWork)
+public struct SearchEngine {
+    static public func search<Element: BinarySearchable>(input: String,
+                                                         list: Array<Element>,
+                                                         completion: (Array<Element>) -> Void) {
+        guard !list.isEmpty else {
+            completion(list)
+            return
         }
-    }
 
-    private func filter(input: String, list: [CityModel]) {
-        if list.count == 0 { return }
-
+        // Record Search Start Time
         let start = DispatchTime.now()
-        querySearch = input
 
+        // Setup Bounds of Search
         var lowerBound = 0
         var upperBound = list.count - 1
         var middleIndex: Int = lowerBound + (upperBound - lowerBound) / 2
 
-        var hasFoundLower: Bool = false
-        var hasFoundUpper: Bool = false
+        // Initialize temporary list
+        var filteredList = Array<Element>()
 
-        while hasFoundLower == false && hasFoundUpper == false {
-            guard lowerBound <= upperBound else { break }
-            if list[middleIndex].name.lowercased().hasPrefix(input.lowercased()) {
-                if (input.lowercased() > list[middleIndex].name.lowercased()) {
-                    for index in (middleIndex...list.startIndex) {
-                        if list[index].name.lowercased().hasPrefix(input.lowercased()) {
-                            lowerBound = index
-                        } else {
-                            hasFoundLower = true
-
-                            for innerIndex in (middleIndex...list.endIndex - 1).reversed() {
-                                if list[innerIndex].name.lowercased().hasPrefix(input.lowercased()) {
-                                    upperBound = innerIndex
-
-                                    hasFoundLower = innerIndex == list.endIndex - 1
-                                } else {
-                                    hasFoundUpper = true
-                                    break
-                                }
-                            }
-
-                            break
-                        }
-                    }
-                } else {
-                    for index in (middleIndex...list.endIndex - 1) {
-                        if list[index].name.lowercased().hasPrefix(input.lowercased()) {
-                            upperBound = index
-                        } else {
-                            hasFoundUpper = true
-
-                            for innerIndex in (list.startIndex...middleIndex).reversed() {
-                                if list[innerIndex].name.lowercased().hasPrefix(input.lowercased()) {
-                                    lowerBound = innerIndex
-
-                                    hasFoundLower = innerIndex == list.startIndex
-                                } else {
-                                    hasFoundLower = true
-                                    break
-                                }
-                            }
-
-                            break
-                        }
-                    }
+        // Binary Search
+        while lowerBound <= upperBound {
+            if list[middleIndex].searchable.lowercased().hasPrefix(input.lowercased()) {
+                // Lower bound of the slice
+                for index in (list.startIndex...middleIndex).reversed() {
+                    guard list[index].searchable.lowercased().hasPrefix(input.lowercased()) else { break }
+                    lowerBound = index
                 }
+                // After the lower bound has been finished, we check the higher bound
+                for index in (middleIndex...list.endIndex - 1) {
+                    guard list[index].searchable.lowercased().hasPrefix(input.lowercased()) else { break }
+                    upperBound = index
+                }
+
+                break
             } else {
-                if (input.lowercased() > list[middleIndex].name.lowercased()) {
+                if (input.lowercased() > list[middleIndex].searchable.lowercased()) {
                     lowerBound = middleIndex + 1
                 } else {
                     upperBound = middleIndex - 1
@@ -143,17 +53,16 @@ final public class SearchEngine {
             }
         }
 
-        filteredList.removeAll(keepingCapacity: false)
-        if hasFoundLower && hasFoundUpper {
+        if lowerBound <= upperBound {
             filteredList.append(contentsOf: list[lowerBound...upperBound])
         }
+        
+        completion(filteredList)
 
         let end = DispatchTime.now()
-
         let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds
         let timeInterval = Double(nanoTime) / 1000000000
         print("Search in: \(timeInterval) seconds")
-        print("Cities: \(filteredList.count)")
+        print("Items: \((upperBound + 1) - lowerBound)")
     }
 }
-

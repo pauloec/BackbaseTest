@@ -9,7 +9,9 @@ import Core
 import SearchEngine
 import CoreLocation
 
-class CitySearchCellViewModel: ViewModelType {
+class CitySearchCellViewModel: ViewModelType, BinarySearchable {
+    public var searchable: String { output.name.value }
+
     private let nameBinder: Binder<String>
     private let coordinateBinder: Binder<CLLocationCoordinate2D>
 

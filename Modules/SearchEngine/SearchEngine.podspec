@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'SearchEngine' => ['Assets/**/*.{png,xcassets,json,txt,storyboard,xib,xcdatamodeld,strings}']
   }
-    
+
 end
