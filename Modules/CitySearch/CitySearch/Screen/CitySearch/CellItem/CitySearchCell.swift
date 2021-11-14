@@ -14,6 +14,12 @@ class CitySearchCell: UITableViewCell {
         return label
     }()
 
+    private let countryLabel: UILabel = {
+        let label = UILabel()
+        label.font = .boldSystemFont(ofSize: 10)
+        return label
+    }()
+
     private let coordinateLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 12)
@@ -51,17 +57,26 @@ extension CitySearchCell: ControllerType {
     }
 
     func setupViews() {
-        [nameLabel, pinImageView, coordinateLabel].forEach {
+        [nameLabel, countryLabel, pinImageView, coordinateLabel].forEach {
             contentView.addSubview($0)
         }
         nameLabel.anchor(top: contentView.safeAreaLayoutGuide.topAnchor,
                          leading: contentView.safeAreaLayoutGuide.leadingAnchor,
                          bottom: nil,
-                         trailing: contentView.safeAreaLayoutGuide.trailingAnchor,
+                         trailing: nil,
                          padding: .init(top: LayoutConstraint.NameLabel.top,
                                         left: LayoutConstraint.NameLabel.left,
                                         bottom: LayoutConstraint.NameLabel.bottom,
                                         right: LayoutConstraint.NameLabel.right))
+
+        countryLabel.anchor(top: nameLabel.centerYAnchor,
+                            leading: nameLabel.trailingAnchor,
+                            bottom: nil,
+                            trailing: contentView.safeAreaLayoutGuide.trailingAnchor,
+                            padding: .init(top: LayoutConstraint.CountryLabel.top,
+                                           left: LayoutConstraint.CountryLabel.left,
+                                           bottom: LayoutConstraint.CountryLabel.bottom,
+                                           right: LayoutConstraint.CountryLabel.right))
 
         pinImageView.anchor(top: nameLabel.bottomAnchor,
                             leading: contentView.safeAreaLayoutGuide.leadingAnchor,
@@ -88,6 +103,9 @@ extension CitySearchCell: ControllerType {
         viewModel.output.name.bind(listener: { [weak self] name in
             self?.nameLabel.text = name
         })
+        viewModel.output.country.bind(listener: { [weak self] country in
+            self?.countryLabel.text = country
+        })
         viewModel.output.coordinate.bind(listener: { [weak self] coordinate in
             self?.coordinateLabel.text = "Lat: \(coordinate.latitude) Lon: \(coordinate.longitude)"
         })
@@ -100,6 +118,12 @@ extension CitySearchCell {
             static let top: CGFloat = 20
             static let left: CGFloat = 20
             static let bottom: CGFloat = 10
+            static let right: CGFloat = 20
+        }
+        struct CountryLabel {
+            static let top: CGFloat = 0
+            static let left: CGFloat = 20
+            static let bottom: CGFloat = 0
             static let right: CGFloat = 20
         }
         struct PinImageView {
