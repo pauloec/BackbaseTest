@@ -13,6 +13,7 @@ class CitySearchCellViewModel: ViewModelType, BinarySearchable {
     public var searchable: String { output.name.value }
 
     private let nameBinder: Binder<String>
+    private let countryBinder: Binder<String>
     private let coordinateBinder: Binder<CLLocationCoordinate2D>
 
     struct Input {
@@ -20,6 +21,7 @@ class CitySearchCellViewModel: ViewModelType, BinarySearchable {
     }
     struct Output {
         let name: Binder<String>
+        let country: Binder<String>
         let coordinate: Binder<CLLocationCoordinate2D>
     }
 
@@ -27,12 +29,15 @@ class CitySearchCellViewModel: ViewModelType, BinarySearchable {
     let output: Output
 
     init(city: CityModel) {
-        nameBinder = .init("\(city.name), \(city.country)")
+        nameBinder = .init(city.name)
+        countryBinder = .init(city.country
+        )
         coordinateBinder = .init(CLLocationCoordinate2D(latitude: city.coord.lat,
                                                         longitude: city.coord.lon))
 
         input = Input()
         output = Output(name: nameBinder,
+                        country: countryBinder,
                         coordinate: coordinateBinder)
     }
 }

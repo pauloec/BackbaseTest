@@ -30,6 +30,7 @@ class CitySearchViewModel: ViewModelType {
 
     // Internal Control
     private let citiesViewModel: [CitySearchCellViewModel]
+    private var querySearch = ""
 
     init() {
         input = Input(didInputSearch: didInputSearchBinder,
@@ -43,7 +44,7 @@ class CitySearchViewModel: ViewModelType {
                   print("uh.. oh no file!")
                   return
               }
-        let cities = parsedCities.sorted { $0.name < $1.name } 
+        let cities = parsedCities.sorted { $0.name.lowercased() < $1.name.lowercased() } 
         citiesViewModel = cities.map { CitySearchCellViewModel(city: $0) }
         filteredViewModelBinder.value = citiesViewModel
 
@@ -54,20 +55,24 @@ class CitySearchViewModel: ViewModelType {
         didInputSearchBinder.bind(listener: { [weak self] text in
             guard let self = self, !text.isEmpty else {
                 self?.filteredViewModelBinder.value = self?.citiesViewModel ?? []
+                self?.querySearch = ""
                 return
             }
 
+            let list = text.lowercased().contains(self.querySearch.lowercased()) ? self.filteredViewModelBinder.value : self.citiesViewModel
+            self.querySearch = text
+
             SearchEngine.search(input: text,
-                                list: self.citiesViewModel,
+                                list: list,
                                 completion: { list in
                 self.filteredViewModelBinder.value = list
             })
         })
-//
-//        didSelectCellBinder.bind(listener: { [weak self] index in
-//            guard let self = self, let index = index else { return }
-//            let cityViewModel = self.citiesBinder.value[index]
-//            self.didSelectCoordinateBinder.value = cityViewModel.output.coordinate.value
-//        })
+
+        didSelectCellBinder.bind(listener: { [weak self] index in
+            guard let self = self, let index = index else { return }
+            let cityViewModel = self.filteredViewModelBinder.value[index]
+            self.didSelectCoordinateBinder.value = cityViewModel.output.coordinate.value
+        })
     }
 }
