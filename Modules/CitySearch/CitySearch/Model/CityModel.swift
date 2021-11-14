@@ -6,19 +6,16 @@
 //
 
 import Foundation
+import SearchEngine
 
-public struct CityModel: Decodable, Equatable, Hashable {
+public class CityModel: Decodable {
     let _id: Int
     public let name: String
     public let country: String
     public let coord: Coordinates
-    
-    public static func == (lhs:CityModel, rhs:CityModel) -> Bool {
-        return lhs._id == rhs._id
-    }
 }
 
-public struct Coordinates: Decodable, Hashable {
+public struct Coordinates: Decodable {
     public let lon: Double
     public let lat: Double
 }

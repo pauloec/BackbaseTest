@@ -7,176 +7,183 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B15B9B19EF5165E08B7D032D1743E4B /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E9F717C972A9C1E338E882981B438F /* Binder.swift */; };
-		0D7600B26FAA55E7650FEFA6B4AE5D6B /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA55657174DA2CEC2F132295C215121 /* SearchEngine.swift */; };
-		1D993325119629741ECB4D8FE3931F3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528C83216257527C6BCA608B73CD8E75 /* Images.xcassets */; };
-		27FC0F84568B16A8F36CE6F59AC43994 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		048A9E6D7D6B7BC5D25BE5949C9FA9D5 /* ControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF312945277B8E8102963C72BDB8694D /* ControllerType.swift */; };
+		0D94BFBCB2DD811B840A1C7FF64CEBFA /* CitySearchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C1ABB75AEB1DD080092F1B6FB4F2A /* CitySearchCellViewModel.swift */; };
+		0E257675D1C155DDC30BDADB50AAF9E5 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1ED4F5817FA4D748C767E7DABD32A /* ViewModelType.swift */; };
+		122F1BC39CD8696312ABE31A2CF4FC7E /* UIView+NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9AF946F432A8B25EF232029C417B9 /* UIView+NSLayoutAnchor.swift */; };
+		2FE45B7D3CEFB7BC0F88FD3D4433AB79 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EA879E05EF2A658FCA00D9FF76D8DC /* SearchEngine.swift */; };
 		378C68CCEF63C462FDDBC53D54634ABC /* Pods-BackbaseTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F89E423402B915A0ED96CCB5A30C44 /* Pods-BackbaseTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C3CAC7077ADA774D33B7EDB8BEE76BD /* ControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F202671F9C98047009B2246EB0038AC /* ControllerType.swift */; };
-		45294E1FA5166AABDFDE8F3E0164E151 /* CitySearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC651F0942CE4A2870C6D9918DB458D4 /* CitySearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4837B9DC3B4E81295CD8D050CFFB4F7C /* SearchEngine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E7499ACE4318402BE2F2E4E027A43 /* SearchEngine-dummy.m */; };
-		5308E8B42DECEC4F410DBAB6380A1923 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717DFD7F4AAE65A75C8AB4E8038E42F /* CitySearchViewController.swift */; };
-		533D5C3EA82D996793C101AED8D44830 /* SearchEngine-SearchEngine in Resources */ = {isa = PBXBuildFile; fileRef = E6E1E4C5D1BE024B1B1FCCC3B388B3DD /* SearchEngine-SearchEngine */; };
-		596DBD95AA67D8235FAEC70E89EB964B /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263471D54C4F40ED0FADA1047EE9D197 /* ViewModelType.swift */; };
-		5BC2999323F97A4FC0322D3CC376A443 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62090F0F8B4CE82F467564867CA6100 /* CityModel.swift */; };
-		5EBE1EB8FC22CE82C5CE16A9EA93E1FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		63A68DB518F5E6D05055C565643EDEB5 /* CitySearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A28FAA0869A31102EF2CF790CA92D8F6 /* CitySearch-dummy.m */; };
+		3CB0410F997A86AAB21F597A5836DE7D /* CitySearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CBA6D0B93BE1E38F38EEDB6FAF9487 /* CitySearchCell.swift */; };
+		4C11F00F7D9528D75B09AD207082A925 /* CitySearchBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F3E5F1FFABB6F999F03E76C0A0468 /* CitySearchBundle.swift */; };
+		4D78A11657A9B8C2293FD3A0C2CD7EF2 /* SearchEngine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DCC63C85D9BA86504132721F3B50AC1 /* SearchEngine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E0157FCE09E7D704B51A3A4AB3A1CEA /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114BC15E837D681FF408EB308B216DC /* CityModel.swift */; };
+		5320DA24E8FC37ED46E9D8AE31D170FD /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73992DA4018EAE20424D913450E38FA7 /* Binder.swift */; };
+		5B74F37207113195BDB2F634537D1314 /* CitySearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60321492D1AA2C964CA61CAA3FA445BB /* CitySearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D6161CCAF91B5D32888C89A370A3003 /* BinarySearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871949FFE1EF4A09EDBD804B34DE7BF /* BinarySearchable.swift */; };
+		5ECC7E97DF52FCE4D9E3E1B0E0ADBC63 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EC036DFBA684049B8FF1EB43108DBDD /* cities.json */; };
+		63D3B71CCAD2323F6FE3D140818B7108 /* CitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBF60296EC9DA58DAC9CF75446465AF /* CitySearchViewModel.swift */; };
+		6506BF0A4EE56D2E44D58EB72D294D77 /* SearchEngine-SearchEngine in Resources */ = {isa = PBXBuildFile; fileRef = E6E1E4C5D1BE024B1B1FCCC3B388B3DD /* SearchEngine-SearchEngine */; };
+		6574139848C52A906BAA8B0F42AB91B4 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC45C40A64707D1EF02992218AFA6D /* Parser.swift */; };
+		67EC86BD4D81C5C01D7AA275DC51B13D /* CitySearch-CitySearch in Resources */ = {isa = PBXBuildFile; fileRef = 3F2CC86EBA4AEF54FC9A673959CAB7ED /* CitySearch-CitySearch */; };
 		6A4016A5FA6475FBFA4CD0C75B42C075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		720E99010947485735D429FF29C14689 /* CitySearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80463A4006F44B4B89B3E76FFF5FF1D7 /* CitySearchCoordinator.swift */; };
-		7829FD46909F520ED9816E5D7AC19E65 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEEB93AA08C83E254439867EF8C032F /* Parser.swift */; };
-		9B04C8704DC081AAF0695DBF20CF6544 /* SearchEngineBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77004274146A095A9AE0DB46900552E4 /* SearchEngineBundle.swift */; };
-		A2F3E71AF0514A294E60F86644187BAF /* CitySearchBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404979E41EAD03E114DE5C89323B5425 /* CitySearchBundle.swift */; };
-		A4793F14274033FB00C0EDD9 /* CityDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4793F13274033FB00C0EDD9 /* CityDetailViewModel.swift */; };
-		A4793F162740340300C0EDD9 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4793F152740340300C0EDD9 /* CityDetailViewController.swift */; };
-		A9A04BF751731CF9E701D095768EE959 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		AA176113DA6C31275A656FB4375E5949 /* SearchEngine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E82DEE8ED068CF5E6644725BDCF48180 /* SearchEngine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4F4C84691866AE0E4DCCF0EE272FB59 /* UIView+NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B692A6CA2179798BDCAFDBF46FDD79 /* UIView+NSLayoutAnchor.swift */; };
+		743638430DFB261BC6E11A8299A246CA /* Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A2B4076D6E6828F7136AB90C9CC686 /* Core-dummy.m */; };
+		876289CEC5F49D28A05CE6D542EA88D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		968608AAD895E9BC1FA0406174897C39 /* CityDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CAC9DC76B46110DB6B979E99D064D /* CityDetailViewModel.swift */; };
+		ACD31D5439F8588503D950BA7EA60B87 /* CitySearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D2BA495432B9B9084F68732475A072 /* CitySearchCoordinator.swift */; };
 		BC434FE464CC2BBEE053DFB35A7F84FE /* Pods-BackbaseTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE75D1E91142BD4DE3D492EDA6995B /* Pods-BackbaseTest-dummy.m */; };
-		BF89C7CAD61769851A93C71FB4524FAC /* Core-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAEBD3F9AFA83A863F6EF05777556E46 /* Core-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C19D1E17393A92C6DB1A266C933CDF85 /* CitySearchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639329C0C8722DDD7237F966E3884DF4 /* CitySearchCellViewModel.swift */; };
-		CDBBBFFFD30B25482D5529152BB3DA7A /* CitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5227CFA9276CCEC8FEBEDB84E02B5 /* CitySearchViewModel.swift */; };
-		D09118B258C6C9627D0C22F63893BB43 /* Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813D15C14135C11EC5DD3E43A06F9C0 /* Core-dummy.m */; };
-		EB2C89878937DEF7BC3062802B1A0C19 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F43BB67E35864DD94D20F29F5DAC983 /* cities.json */; };
-		F29CF13D1640747354375EC5D2DCC610 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE506F31A18512604D55A0E5F23D4715 /* CoordinatorType.swift */; };
-		F33B78BEB9268FA512AD61C3DFCCD5FE /* CitySearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1951E74A42B896D07447089DFDF591A /* CitySearchCell.swift */; };
-		F762912FA37F5BFD0B718EE0225576D0 /* CitySearch-CitySearch in Resources */ = {isa = PBXBuildFile; fileRef = 3F2CC86EBA4AEF54FC9A673959CAB7ED /* CitySearch-CitySearch */; };
+		C09D8A7B2BCF55312BAE4D71662D8DA7 /* Core-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2A6C519018A671C7543DD11A1CE27D /* Core-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBC64FFFB9D68DAAE8D703FC4FBB841B /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD24F64AEEAB5E5518D329F5D39A41D /* CoordinatorType.swift */; };
+		D1C9B06991741B0934F82FC01EFF8BD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DC1EA873670D21E95731B367351D5866 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615AD9085DB7EA479F80DCC6EC4E21C3 /* CitySearchViewController.swift */; };
+		F1A0763765E92CA5C427F52258D154AE /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5D419EF5CB1CC0EC91A1EABBC090B /* CityDetailViewController.swift */; };
+		F1D3914BBD55BB3C5072DE686DE0AD90 /* SearchEngine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEB1195C7C6BA5F79B3D1DAA0B050E /* SearchEngine-dummy.m */; };
+		F9021B449D73819F4FE987B49FA6827B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A499A9DA8F3DF3F26A781F079EAD4202 /* Images.xcassets */; };
+		FC71A8DA6B09D403EAC8E4E903E8A6F6 /* CitySearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1906A59701170494E50A663566F587D /* CitySearch-dummy.m */; };
+		FDDAF71274532B690EE5032894B0285A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0381AD6BBC82791B153A64840DD1E24F /* PBXContainerItemProxy */ = {
+		09CD74AB537ABA0D5D03EFC243FCBEC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EB990492FB4ECF07EADAABD059D6A829;
 			remoteInfo = "SearchEngine-SearchEngine";
 		};
-		3424C969CAF327FBD8550F01A1F87E0C /* PBXContainerItemProxy */ = {
+		46E0E0AED9E9A6E56DBE9AA0F287F125 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 232DB7ED97BB2B0FFE9B212B269D96FA;
 			remoteInfo = SearchEngine;
 		};
-		527B1F72AA4F60A0D9B1669954ECBC0F /* PBXContainerItemProxy */ = {
+		5F0866E852F77DD46004623226140ACB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E8E4B0DF2B9658B7E1064491A826C1D8;
 			remoteInfo = "CitySearch-CitySearch";
 		};
-		A06D597E211488CFF3253D17772F99D5 /* PBXContainerItemProxy */ = {
+		5F1E9F1C6AA46A3ABDEE235BE5757C6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 045EA0CC8B1D13A2E99A2219A6EAFB1A;
 			remoteInfo = Core;
 		};
-		A71A979E203E479480E6554EB5ABB11A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 045EA0CC8B1D13A2E99A2219A6EAFB1A;
-			remoteInfo = Core;
-		};
-		D1FDB63450ABE6BAB54AAE087F9AFC7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 34746E57AED9933A998AD7FE7B3D6D58;
-			remoteInfo = CitySearch;
-		};
-		FF276C04B56B0747ED4F0EC18D08137F /* PBXContainerItemProxy */ = {
+		7B437A329B5C48D306457AF8DE3913EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 232DB7ED97BB2B0FFE9B212B269D96FA;
 			remoteInfo = SearchEngine;
 		};
+		C137D8B7B6C266CC4ECB9DC33232B122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34746E57AED9933A998AD7FE7B3D6D58;
+			remoteInfo = CitySearch;
+		};
+		CB3C7EFF98F2F6A5DB6E58CDE496273A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045EA0CC8B1D13A2E99A2219A6EAFB1A;
+			remoteInfo = Core;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F43BB67E35864DD94D20F29F5DAC983 /* cities.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = cities.json; path = Assets/cities.json; sourceTree = "<group>"; };
-		0F8F61CE64FE0D08062213E8C198B353 /* SearchEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SearchEngine.release.xcconfig; sourceTree = "<group>"; };
+		0114BC15E837D681FF408EB308B216DC /* CityModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		03F9AF946F432A8B25EF232029C417B9 /* UIView+NSLayoutAnchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutAnchor.swift"; sourceTree = "<group>"; };
+		0A074F12EF190CA0677AC3ACB67873F4 /* CitySearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CitySearch-prefix.pch"; sourceTree = "<group>"; };
+		131CAC9DC76B46110DB6B979E99D064D /* CityDetailViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityDetailViewModel.swift; sourceTree = "<group>"; };
+		13EA879E05EF2A658FCA00D9FF76D8DC /* SearchEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchEngine.swift; path = SearchEngine/SearchEngine.swift; sourceTree = "<group>"; };
 		13EE75D1E91142BD4DE3D492EDA6995B /* Pods-BackbaseTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BackbaseTest-dummy.m"; sourceTree = "<group>"; };
-		19B692A6CA2179798BDCAFDBF46FDD79 /* UIView+NSLayoutAnchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+NSLayoutAnchor.swift"; path = "Core/Base/UIView+NSLayoutAnchor.swift"; sourceTree = "<group>"; };
-		263471D54C4F40ED0FADA1047EE9D197 /* ViewModelType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewModelType.swift; path = Core/Base/ViewModelType.swift; sourceTree = "<group>"; };
-		285E7499ACE4318402BE2F2E4E027A43 /* SearchEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SearchEngine-dummy.m"; sourceTree = "<group>"; };
-		29D55A08BEE3095A8974377D1FA9389A /* CitySearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CitySearch.modulemap; sourceTree = "<group>"; };
+		19CBA6D0B93BE1E38F38EEDB6FAF9487 /* CitySearchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchCell.swift; sourceTree = "<group>"; };
+		26D2BA495432B9B9084F68732475A072 /* CitySearchCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CitySearchCoordinator.swift; path = CitySearch/CitySearchCoordinator.swift; sourceTree = "<group>"; };
 		2FD88237BE93359AC996944AD0C59B4D /* Pods-BackbaseTest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BackbaseTest"; path = Pods_BackbaseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		354E4420D96285D6610D648EE15F4195 /* SearchEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SearchEngine-prefix.pch"; sourceTree = "<group>"; };
 		3BF0024EB6698BECDFBC36F79666DC80 /* CitySearch */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CitySearch; path = CitySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2CC86EBA4AEF54FC9A673959CAB7ED /* CitySearch-CitySearch */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CitySearch-CitySearch"; path = CitySearch.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		404979E41EAD03E114DE5C89323B5425 /* CitySearchBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchBundle.swift; sourceTree = "<group>"; };
-		47D5C64E3563BDC98D0267E8C3D6B384 /* CitySearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CitySearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		528C83216257527C6BCA608B73CD8E75 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
+		3FFEB1195C7C6BA5F79B3D1DAA0B050E /* SearchEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SearchEngine-dummy.m"; sourceTree = "<group>"; };
+		51BA227CCD4CFA354B07F8E7641307AB /* CitySearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CitySearch.modulemap; sourceTree = "<group>"; };
 		5467D25854318D06E6A9E9014EC1CE75 /* SearchEngine */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SearchEngine; path = SearchEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EB7FB58799D2D9AE72F98B40E247388 /* Core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Core.modulemap; sourceTree = "<group>"; };
-		639329C0C8722DDD7237F966E3884DF4 /* CitySearchCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchCellViewModel.swift; sourceTree = "<group>"; };
-		6AE77D8773E5724C977EECDC9F66F38D /* SearchEngine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SearchEngine.modulemap; sourceTree = "<group>"; };
-		6E16F48EAB56C4AD0E0EE02D39AF6AF5 /* CitySearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CitySearch-prefix.pch"; sourceTree = "<group>"; };
+		59DC45C40A64707D1EF02992218AFA6D /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5AFEB82B1D98A7B717829C076C7FCF57 /* SearchEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SearchEngine-prefix.pch"; sourceTree = "<group>"; };
+		5E4A61715CDAF3315BF1DDE4427DD109 /* Core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Core.modulemap; sourceTree = "<group>"; };
+		5E9F3ACE47A6E3458F141329BA53F9EF /* SearchEngine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SearchEngine.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		60321492D1AA2C964CA61CAA3FA445BB /* CitySearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CitySearch-umbrella.h"; sourceTree = "<group>"; };
+		615AD9085DB7EA479F80DCC6EC4E21C3 /* CitySearchViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		77004274146A095A9AE0DB46900552E4 /* SearchEngineBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchEngineBundle.swift; sourceTree = "<group>"; };
-		7813D15C14135C11EC5DD3E43A06F9C0 /* Core-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Core-dummy.m"; sourceTree = "<group>"; };
-		7CA5227CFA9276CCEC8FEBEDB84E02B5 /* CitySearchViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchViewModel.swift; sourceTree = "<group>"; };
-		80463A4006F44B4B89B3E76FFF5FF1D7 /* CitySearchCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CitySearchCoordinator.swift; path = CitySearch/CitySearchCoordinator.swift; sourceTree = "<group>"; };
-		8966E08F7A5F1BE0A9F14443F04B823E /* Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Core.debug.xcconfig; sourceTree = "<group>"; };
+		73992DA4018EAE20424D913450E38FA7 /* Binder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
+		74127B6485B0B72B79464889DCAE7577 /* CitySearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CitySearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		754CC2E5E423231D7CBBB7970F6E5B87 /* Core-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Core-prefix.pch"; sourceTree = "<group>"; };
+		7DCC63C85D9BA86504132721F3B50AC1 /* SearchEngine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SearchEngine-umbrella.h"; sourceTree = "<group>"; };
+		7EC036DFBA684049B8FF1EB43108DBDD /* cities.json */ = {isa = PBXFileReference; includeInIndex = 1; name = cities.json; path = Assets/cities.json; sourceTree = "<group>"; };
+		83CA491A23F8B29AFEB507EBB39491E9 /* CitySearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CitySearch-Info.plist"; sourceTree = "<group>"; };
+		84D1ED4F5817FA4D748C767E7DABD32A /* ViewModelType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		8871949FFE1EF4A09EDBD804B34DE7BF /* BinarySearchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinarySearchable.swift; path = SearchEngine/BinarySearchable.swift; sourceTree = "<group>"; };
 		8CFAD3AC96219EC653E157BACA5C183C /* Pods-BackbaseTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BackbaseTest-acknowledgements.plist"; sourceTree = "<group>"; };
-		8DA585D76DF52BE97B7DBF9837459C10 /* CitySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CitySearch.debug.xcconfig; sourceTree = "<group>"; };
-		8FC0622F78DEB1F3689AA93D57847FE3 /* Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Core.release.xcconfig; sourceTree = "<group>"; };
-		94AD4F0354C361D4A111376F96CD02D6 /* Core.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Core.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		92E0EDB7000072A084F4E653AF61B3D7 /* CitySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CitySearch.release.xcconfig; sourceTree = "<group>"; };
+		99515BA43020827C847F9F02F483A47D /* Core.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Core.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		995C1ABB75AEB1DD080092F1B6FB4F2A /* CitySearchCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchCellViewModel.swift; sourceTree = "<group>"; };
 		99F89E423402B915A0ED96CCB5A30C44 /* Pods-BackbaseTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BackbaseTest-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F202671F9C98047009B2246EB0038AC /* ControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControllerType.swift; path = Core/Base/ControllerType.swift; sourceTree = "<group>"; };
-		A02D5D2C0DA114A14F8B82A4164206B6 /* SearchEngine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SearchEngine.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FACEF91174F15F00FB9D62004B747B5 /* Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Core.release.xcconfig; sourceTree = "<group>"; };
+		A1906A59701170494E50A663566F587D /* CitySearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CitySearch-dummy.m"; sourceTree = "<group>"; };
 		A1C26187AB87BCA7FA53A3D86AB5198D /* Pods-BackbaseTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BackbaseTest-Info.plist"; sourceTree = "<group>"; };
-		A28FAA0869A31102EF2CF790CA92D8F6 /* CitySearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CitySearch-dummy.m"; sourceTree = "<group>"; };
 		A33822CA012915BF4218B0092AF3DFC0 /* Pods-BackbaseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BackbaseTest.release.xcconfig"; sourceTree = "<group>"; };
-		A4793F13274033FB00C0EDD9 /* CityDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewModel.swift; sourceTree = "<group>"; };
-		A4793F152740340300C0EDD9 /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
-		AA2447F63891AAC65C6BF93D5B979B2C /* Core-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Core-prefix.pch"; sourceTree = "<group>"; };
-		ACC4D9EE555DA23BF77813D7D55E2A58 /* SearchEngine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SearchEngine-Info.plist"; sourceTree = "<group>"; };
+		A472CA274E21D5F1519BCC849ADE26A2 /* SearchEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SearchEngine.debug.xcconfig; sourceTree = "<group>"; };
+		A499A9DA8F3DF3F26A781F079EAD4202 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
+		AAD24F64AEEAB5E5518D329F5D39A41D /* CoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		AF312945277B8E8102963C72BDB8694D /* ControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ControllerType.swift; sourceTree = "<group>"; };
 		B354CD95A1BD0CA7485A9F75FCC4331A /* Core */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Core; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4A4B1A76509CA323094CFC05EC4F748 /* Core-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Core-Info.plist"; sourceTree = "<group>"; };
-		B717DFD7F4AAE65A75C8AB4E8038E42F /* CitySearchViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
-		BE506F31A18512604D55A0E5F23D4715 /* CoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoordinatorType.swift; path = Core/Base/CoordinatorType.swift; sourceTree = "<group>"; };
-		C66821275C01BF2054DFF8FBD8AC9F51 /* CitySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CitySearch.release.xcconfig; sourceTree = "<group>"; };
-		CBC743285E7D62BD5DAD933A6D2EF2BB /* ResourceBundle-SearchEngine-SearchEngine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SearchEngine-SearchEngine-Info.plist"; sourceTree = "<group>"; };
-		CCEEB93AA08C83E254439867EF8C032F /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = SearchEngine/Parser.swift; sourceTree = "<group>"; };
-		CE8CFE52E0E0B040D801118E0D46E931 /* ResourceBundle-CitySearch-CitySearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CitySearch-CitySearch-Info.plist"; sourceTree = "<group>"; };
+		B6A5D419EF5CB1CC0EC91A1EABBC090B /* CityDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
+		BE4592309A8F71566396564055D5C25B /* ResourceBundle-SearchEngine-SearchEngine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SearchEngine-SearchEngine-Info.plist"; sourceTree = "<group>"; };
+		BFBF60296EC9DA58DAC9CF75446465AF /* CitySearchViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchViewModel.swift; sourceTree = "<group>"; };
+		CA90E8EC167CF0FC86C85B378699F3CC /* Core-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Core-Info.plist"; sourceTree = "<group>"; };
+		CCF970E9B43F8845F84F672606C8F3FB /* CitySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CitySearch.debug.xcconfig; sourceTree = "<group>"; };
 		CF2329C73464B030FB373A0B35BD16CD /* Pods-BackbaseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BackbaseTest.debug.xcconfig"; sourceTree = "<group>"; };
-		D1951E74A42B896D07447089DFDF591A /* CitySearchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchCell.swift; sourceTree = "<group>"; };
+		CF2A6C519018A671C7543DD11A1CE27D /* Core-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Core-umbrella.h"; sourceTree = "<group>"; };
 		D3FEDAEB33B8C08FABDB49DA7BB6CD81 /* Pods-BackbaseTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BackbaseTest-frameworks.sh"; sourceTree = "<group>"; };
-		D62090F0F8B4CE82F467564867CA6100 /* CityModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CityModel.swift; path = SearchEngine/CityModel.swift; sourceTree = "<group>"; };
-		D7FA62BA736FD255BE410971E7BAA280 /* SearchEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SearchEngine.debug.xcconfig; sourceTree = "<group>"; };
-		DBC2618BD3E6F1EB4A8D21489BEE4F5A /* CitySearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CitySearch-Info.plist"; sourceTree = "<group>"; };
+		D4A2B4076D6E6828F7136AB90C9CC686 /* Core-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Core-dummy.m"; sourceTree = "<group>"; };
 		DD5DA10187619767F90E42AE008F9CC3 /* Pods-BackbaseTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BackbaseTest-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E6E1E4C5D1BE024B1B1FCCC3B388B3DD /* SearchEngine-SearchEngine */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SearchEngine-SearchEngine"; path = SearchEngine.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7E9F717C972A9C1E338E882981B438F /* Binder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Binder.swift; path = Core/Base/Binder.swift; sourceTree = "<group>"; };
-		E82DEE8ED068CF5E6644725BDCF48180 /* SearchEngine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SearchEngine-umbrella.h"; sourceTree = "<group>"; };
-		ECA55657174DA2CEC2F132295C215121 /* SearchEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchEngine.swift; path = SearchEngine/SearchEngine.swift; sourceTree = "<group>"; };
-		FAEBD3F9AFA83A863F6EF05777556E46 /* Core-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Core-umbrella.h"; sourceTree = "<group>"; };
-		FC651F0942CE4A2870C6D9918DB458D4 /* CitySearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CitySearch-umbrella.h"; sourceTree = "<group>"; };
+		EC739F5D1DBE3AE010932B08ADB5EA51 /* SearchEngine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SearchEngine.modulemap; sourceTree = "<group>"; };
+		F1DC827293045AEFF785609CD64413A1 /* SearchEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SearchEngine.release.xcconfig; sourceTree = "<group>"; };
+		F87F3E5F1FFABB6F999F03E76C0A0468 /* CitySearchBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySearchBundle.swift; sourceTree = "<group>"; };
+		F91A26FA2D7D26C7A982E3AA41C8C338 /* SearchEngine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SearchEngine-Info.plist"; sourceTree = "<group>"; };
+		FAC3FCC8FC4A1E58E4F52B72629F3E76 /* Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Core.debug.xcconfig; sourceTree = "<group>"; };
 		FD71CFD5E0185D2E71668CFE702DFBDC /* Pods-BackbaseTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BackbaseTest.modulemap"; sourceTree = "<group>"; };
+		FFC9C6DD68496DC8358C6486231BE66A /* ResourceBundle-CitySearch-CitySearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CitySearch-CitySearch-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		191F5F74B2CE1208E67BB8A219E7D8AC /* Frameworks */ = {
+		3765B8DD419AD43B83C2EC9216E06EB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A04BF751731CF9E701D095768EE959 /* Foundation.framework in Frameworks */,
+				FDDAF71274532B690EE5032894B0285A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43419F2D5993FA8D99133202D640E3C8 /* Frameworks */ = {
+		4A8CAF622EB6F89E2AFB22C6292419BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EBE1EB8FC22CE82C5CE16A9EA93E1FA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		589614EA0AF2011DE8ECE8847FF59A7D /* Frameworks */ = {
+		8222B9ACB44A052301985980473A3E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				876289CEC5F49D28A05CE6D542EA88D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A298C745F99F751BE71F2FD141CCE07F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,24 +198,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9B7624B06F5ADE75221022E8246AA0A /* Frameworks */ = {
+		C2A0071C6C1BC5BF1B585BCC14BAC3CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E8768146949FD65A969E2521CF2D2709 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27FC0F84568B16A8F36CE6F59AC43994 /* Foundation.framework in Frameworks */,
+				D1C9B06991741B0934F82FC01EFF8BD7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04933B847BD6D9102C9A3CAF5750EDD2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				73992DA4018EAE20424D913450E38FA7 /* Binder.swift */,
+				59DC45C40A64707D1EF02992218AFA6D /* Parser.swift */,
+			);
+			name = Tool;
+			path = Core/Tool;
+			sourceTree = "<group>";
+		};
 		06EA462D4237B336B9AEF8DB529EFB38 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,81 +227,55 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		13550F49BE868467F64EBF1F25B85F9C /* Pod */ = {
+		15851250A63F13DB9864E874744AB18E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				47D5C64E3563BDC98D0267E8C3D6B384 /* CitySearch.podspec */,
+				EC3922DA11FD16B9D249C29863AA1D84 /* CitySearch */,
+				17035E76EA2F151BDB74725D3AFAF373 /* Core */,
+				EEE1B7BD70B1B2FA5043F426C16526D6 /* SearchEngine */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		2073F5507F9201543DAC7ABC9677170A /* Core */ = {
+		17035E76EA2F151BDB74725D3AFAF373 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E7E9F717C972A9C1E338E882981B438F /* Binder.swift */,
-				9F202671F9C98047009B2246EB0038AC /* ControllerType.swift */,
-				BE506F31A18512604D55A0E5F23D4715 /* CoordinatorType.swift */,
-				19B692A6CA2179798BDCAFDBF46FDD79 /* UIView+NSLayoutAnchor.swift */,
-				263471D54C4F40ED0FADA1047EE9D197 /* ViewModelType.swift */,
-				9B06463198C6721AC82198688516704F /* Pod */,
-				4C2A8CA6C174FA7ADDD0F5E4029B900A /* Support Files */,
+				7CB3F9BDBF820F8BDD967EDE21BD0EA7 /* Extension */,
+				89FC02C354F669CCFFEDF907A3FB380B /* Pod */,
+				97A0A77012353D87F82A5B0611A87941 /* Support Files */,
+				04933B847BD6D9102C9A3CAF5750EDD2 /* Tool */,
+				D74EA34357C7B7FE8D9D8AA4AF5AE4DA /* Type */,
 			);
 			name = Core;
 			path = ../Modules/Core;
 			sourceTree = "<group>";
 		};
-		2C720F7C0D847FCA15846A22C6E2960A /* CitySearch */ = {
+		2242E4C955C569FBE7CD2F1540573FEE /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				80463A4006F44B4B89B3E76FFF5FF1D7 /* CitySearchCoordinator.swift */,
-				528C83216257527C6BCA608B73CD8E75 /* Images.xcassets */,
-				BBA41FFEC7537056654EBC103D1302CD /* Extension */,
-				13550F49BE868467F64EBF1F25B85F9C /* Pod */,
-				D090062397732715FC2E0F1994BD5966 /* Screen */,
-				BDA08EDB94298F1C72AB16E18134D273 /* Support Files */,
+				3DF5FCD06C3AFF73FB812189927C6507 /* CityDetail */,
+				93511EB25197432766BB24013C92CC04 /* CitySearch */,
 			);
-			name = CitySearch;
-			path = ../Modules/CitySearch;
+			name = Screen;
+			path = CitySearch/Screen;
 			sourceTree = "<group>";
 		};
-		2D257AAD1B8DE82BA7FE6ED97343B7A0 /* Extension */ = {
+		3DF5FCD06C3AFF73FB812189927C6507 /* CityDetail */ = {
 			isa = PBXGroup;
 			children = (
-				77004274146A095A9AE0DB46900552E4 /* SearchEngineBundle.swift */,
+				B6A5D419EF5CB1CC0EC91A1EABBC090B /* CityDetailViewController.swift */,
+				131CAC9DC76B46110DB6B979E99D064D /* CityDetailViewModel.swift */,
 			);
-			name = Extension;
-			path = SearchEngine/Extension;
+			name = CityDetail;
+			path = CityDetail;
 			sourceTree = "<group>";
 		};
-		3DA9C2B9491F6E1644D754B15B570DC1 /* Support Files */ = {
+		556ED7E500EDD6B28050BD4601E8D652 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CBC743285E7D62BD5DAD933A6D2EF2BB /* ResourceBundle-SearchEngine-SearchEngine-Info.plist */,
-				6AE77D8773E5724C977EECDC9F66F38D /* SearchEngine.modulemap */,
-				285E7499ACE4318402BE2F2E4E027A43 /* SearchEngine-dummy.m */,
-				ACC4D9EE555DA23BF77813D7D55E2A58 /* SearchEngine-Info.plist */,
-				354E4420D96285D6610D648EE15F4195 /* SearchEngine-prefix.pch */,
-				E82DEE8ED068CF5E6644725BDCF48180 /* SearchEngine-umbrella.h */,
-				D7FA62BA736FD255BE410971E7BAA280 /* SearchEngine.debug.xcconfig */,
-				0F8F61CE64FE0D08062213E8C198B353 /* SearchEngine.release.xcconfig */,
+				5E9F3ACE47A6E3458F141329BA53F9EF /* SearchEngine.podspec */,
 			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/SearchEngine";
-			sourceTree = "<group>";
-		};
-		4C2A8CA6C174FA7ADDD0F5E4029B900A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5EB7FB58799D2D9AE72F98B40E247388 /* Core.modulemap */,
-				7813D15C14135C11EC5DD3E43A06F9C0 /* Core-dummy.m */,
-				B4A4B1A76509CA323094CFC05EC4F748 /* Core-Info.plist */,
-				AA2447F63891AAC65C6BF93D5B979B2C /* Core-prefix.pch */,
-				FAEBD3F9AFA83A863F6EF05777556E46 /* Core-umbrella.h */,
-				8966E08F7A5F1BE0A9F14443F04B823E /* Core.debug.xcconfig */,
-				8FC0622F78DEB1F3689AA93D57847FE3 /* Core.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/Core";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -300,14 +284,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5D7EBD00D78C3778AB30B691E7E19F4C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A02D5D2C0DA114A14F8B82A4164206B6 /* SearchEngine.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		75A81152CD0A256FA8A9D0D82EE6AF0B /* Products */ = {
@@ -321,6 +297,15 @@
 				E6E1E4C5D1BE024B1B1FCCC3B388B3DD /* SearchEngine-SearchEngine */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7CB3F9BDBF820F8BDD967EDE21BD0EA7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				03F9AF946F432A8B25EF232029C417B9 /* UIView+NSLayoutAnchor.swift */,
+			);
+			name = Extension;
+			path = Core/Extension;
 			sourceTree = "<group>";
 		};
 		80762D7CAE83F0454574F145FDA3E4FC /* Pods-BackbaseTest */ = {
@@ -340,101 +325,100 @@
 			path = "Target Support Files/Pods-BackbaseTest";
 			sourceTree = "<group>";
 		};
-		98E2E396A7E46803A85A7AFCDEA54D3C /* CellItem */ = {
+		8333E275AD160E1FF214F60E6A69E01B /* CellItem */ = {
 			isa = PBXGroup;
 			children = (
-				D1951E74A42B896D07447089DFDF591A /* CitySearchCell.swift */,
-				639329C0C8722DDD7237F966E3884DF4 /* CitySearchCellViewModel.swift */,
+				19CBA6D0B93BE1E38F38EEDB6FAF9487 /* CitySearchCell.swift */,
+				995C1ABB75AEB1DD080092F1B6FB4F2A /* CitySearchCellViewModel.swift */,
 			);
+			name = CellItem;
 			path = CellItem;
 			sourceTree = "<group>";
 		};
-		9B06463198C6721AC82198688516704F /* Pod */ = {
+		89FC02C354F669CCFFEDF907A3FB380B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				94AD4F0354C361D4A111376F96CD02D6 /* Core.podspec */,
+				99515BA43020827C847F9F02F483A47D /* Core.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		9C99C35AE187871F98CA0D07A6D81E93 /* CitySearch */ = {
+		93511EB25197432766BB24013C92CC04 /* CitySearch */ = {
 			isa = PBXGroup;
 			children = (
-				B717DFD7F4AAE65A75C8AB4E8038E42F /* CitySearchViewController.swift */,
-				7CA5227CFA9276CCEC8FEBEDB84E02B5 /* CitySearchViewModel.swift */,
-				98E2E396A7E46803A85A7AFCDEA54D3C /* CellItem */,
+				615AD9085DB7EA479F80DCC6EC4E21C3 /* CitySearchViewController.swift */,
+				BFBF60296EC9DA58DAC9CF75446465AF /* CitySearchViewModel.swift */,
+				8333E275AD160E1FF214F60E6A69E01B /* CellItem */,
 			);
+			name = CitySearch;
 			path = CitySearch;
 			sourceTree = "<group>";
 		};
-		A4793F12274033CF00C0EDD9 /* CityDetail */ = {
+		97A0A77012353D87F82A5B0611A87941 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A4793F152740340300C0EDD9 /* CityDetailViewController.swift */,
-				A4793F13274033FB00C0EDD9 /* CityDetailViewModel.swift */,
+				5E4A61715CDAF3315BF1DDE4427DD109 /* Core.modulemap */,
+				D4A2B4076D6E6828F7136AB90C9CC686 /* Core-dummy.m */,
+				CA90E8EC167CF0FC86C85B378699F3CC /* Core-Info.plist */,
+				754CC2E5E423231D7CBBB7970F6E5B87 /* Core-prefix.pch */,
+				CF2A6C519018A671C7543DD11A1CE27D /* Core-umbrella.h */,
+				FAC3FCC8FC4A1E58E4F52B72629F3E76 /* Core.debug.xcconfig */,
+				9FACEF91174F15F00FB9D62004B747B5 /* Core.release.xcconfig */,
 			);
-			path = CityDetail;
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/Core";
 			sourceTree = "<group>";
 		};
-		BBA41FFEC7537056654EBC103D1302CD /* Extension */ = {
+		9983E8EE8055E1E1B91A609AC522CB90 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				404979E41EAD03E114DE5C89323B5425 /* CitySearchBundle.swift */,
+				F87F3E5F1FFABB6F999F03E76C0A0468 /* CitySearchBundle.swift */,
 			);
 			name = Extension;
 			path = CitySearch/Extension;
 			sourceTree = "<group>";
 		};
-		BDA08EDB94298F1C72AB16E18134D273 /* Support Files */ = {
+		A008E7D2594A074396AA55C7D1822894 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				29D55A08BEE3095A8974377D1FA9389A /* CitySearch.modulemap */,
-				A28FAA0869A31102EF2CF790CA92D8F6 /* CitySearch-dummy.m */,
-				DBC2618BD3E6F1EB4A8D21489BEE4F5A /* CitySearch-Info.plist */,
-				6E16F48EAB56C4AD0E0EE02D39AF6AF5 /* CitySearch-prefix.pch */,
-				FC651F0942CE4A2870C6D9918DB458D4 /* CitySearch-umbrella.h */,
-				8DA585D76DF52BE97B7DBF9837459C10 /* CitySearch.debug.xcconfig */,
-				C66821275C01BF2054DFF8FBD8AC9F51 /* CitySearch.release.xcconfig */,
-				CE8CFE52E0E0B040D801118E0D46E931 /* ResourceBundle-CitySearch-CitySearch-Info.plist */,
+				51BA227CCD4CFA354B07F8E7641307AB /* CitySearch.modulemap */,
+				A1906A59701170494E50A663566F587D /* CitySearch-dummy.m */,
+				83CA491A23F8B29AFEB507EBB39491E9 /* CitySearch-Info.plist */,
+				0A074F12EF190CA0677AC3ACB67873F4 /* CitySearch-prefix.pch */,
+				60321492D1AA2C964CA61CAA3FA445BB /* CitySearch-umbrella.h */,
+				CCF970E9B43F8845F84F672606C8F3FB /* CitySearch.debug.xcconfig */,
+				92E0EDB7000072A084F4E653AF61B3D7 /* CitySearch.release.xcconfig */,
+				FFC9C6DD68496DC8358C6486231BE66A /* ResourceBundle-CitySearch-CitySearch-Info.plist */,
 			);
 			name = "Support Files";
 			path = "../../Pods/Target Support Files/CitySearch";
+			sourceTree = "<group>";
+		};
+		ADF853055E40382FB389625987544D26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE4592309A8F71566396564055D5C25B /* ResourceBundle-SearchEngine-SearchEngine-Info.plist */,
+				EC739F5D1DBE3AE010932B08ADB5EA51 /* SearchEngine.modulemap */,
+				3FFEB1195C7C6BA5F79B3D1DAA0B050E /* SearchEngine-dummy.m */,
+				F91A26FA2D7D26C7A982E3AA41C8C338 /* SearchEngine-Info.plist */,
+				5AFEB82B1D98A7B717829C076C7FCF57 /* SearchEngine-prefix.pch */,
+				7DCC63C85D9BA86504132721F3B50AC1 /* SearchEngine-umbrella.h */,
+				A472CA274E21D5F1519BCC849ADE26A2 /* SearchEngine.debug.xcconfig */,
+				F1DC827293045AEFF785609CD64413A1 /* SearchEngine.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/SearchEngine";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F1BC1D30F83A427AC5FAC0E5CE590240 /* Development Pods */,
+				15851250A63F13DB9864E874744AB18E /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				75A81152CD0A256FA8A9D0D82EE6AF0B /* Products */,
 				06EA462D4237B336B9AEF8DB529EFB38 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D090062397732715FC2E0F1994BD5966 /* Screen */ = {
-			isa = PBXGroup;
-			children = (
-				A4793F12274033CF00C0EDD9 /* CityDetail */,
-				9C99C35AE187871F98CA0D07A6D81E93 /* CitySearch */,
-			);
-			name = Screen;
-			path = CitySearch/Screen;
-			sourceTree = "<group>";
-		};
-		D1D3B4A18FD7F3387092CA165CEDE740 /* SearchEngine */ = {
-			isa = PBXGroup;
-			children = (
-				0F43BB67E35864DD94D20F29F5DAC983 /* cities.json */,
-				D62090F0F8B4CE82F467564867CA6100 /* CityModel.swift */,
-				CCEEB93AA08C83E254439867EF8C032F /* Parser.swift */,
-				ECA55657174DA2CEC2F132295C215121 /* SearchEngine.swift */,
-				2D257AAD1B8DE82BA7FE6ED97343B7A0 /* Extension */,
-				5D7EBD00D78C3778AB30B691E7E19F4C /* Pod */,
-				3DA9C2B9491F6E1644D754B15B570DC1 /* Support Files */,
-			);
-			name = SearchEngine;
-			path = ../Modules/SearchEngine;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -445,24 +429,78 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F1BC1D30F83A427AC5FAC0E5CE590240 /* Development Pods */ = {
+		D74EA34357C7B7FE8D9D8AA4AF5AE4DA /* Type */ = {
 			isa = PBXGroup;
 			children = (
-				2C720F7C0D847FCA15846A22C6E2960A /* CitySearch */,
-				2073F5507F9201543DAC7ABC9677170A /* Core */,
-				D1D3B4A18FD7F3387092CA165CEDE740 /* SearchEngine */,
+				AF312945277B8E8102963C72BDB8694D /* ControllerType.swift */,
+				AAD24F64AEEAB5E5518D329F5D39A41D /* CoordinatorType.swift */,
+				84D1ED4F5817FA4D748C767E7DABD32A /* ViewModelType.swift */,
 			);
-			name = "Development Pods";
+			name = Type;
+			path = Core/Type;
+			sourceTree = "<group>";
+		};
+		E0646FFAA0686BB297290844B35C780E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				74127B6485B0B72B79464889DCAE7577 /* CitySearch.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EC3922DA11FD16B9D249C29863AA1D84 /* CitySearch */ = {
+			isa = PBXGroup;
+			children = (
+				7EC036DFBA684049B8FF1EB43108DBDD /* cities.json */,
+				26D2BA495432B9B9084F68732475A072 /* CitySearchCoordinator.swift */,
+				A499A9DA8F3DF3F26A781F079EAD4202 /* Images.xcassets */,
+				9983E8EE8055E1E1B91A609AC522CB90 /* Extension */,
+				FD7CF4222D6FA6593A7F5955596D44EC /* Model */,
+				E0646FFAA0686BB297290844B35C780E /* Pod */,
+				2242E4C955C569FBE7CD2F1540573FEE /* Screen */,
+				A008E7D2594A074396AA55C7D1822894 /* Support Files */,
+			);
+			name = CitySearch;
+			path = ../Modules/CitySearch;
+			sourceTree = "<group>";
+		};
+		EEE1B7BD70B1B2FA5043F426C16526D6 /* SearchEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8871949FFE1EF4A09EDBD804B34DE7BF /* BinarySearchable.swift */,
+				13EA879E05EF2A658FCA00D9FF76D8DC /* SearchEngine.swift */,
+				556ED7E500EDD6B28050BD4601E8D652 /* Pod */,
+				ADF853055E40382FB389625987544D26 /* Support Files */,
+			);
+			name = SearchEngine;
+			path = ../Modules/SearchEngine;
+			sourceTree = "<group>";
+		};
+		FD7CF4222D6FA6593A7F5955596D44EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0114BC15E837D681FF408EB308B216DC /* CityModel.swift */,
+			);
+			name = Model;
+			path = CitySearch/Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		360C970DA03DEAF502B5A11CA01D4394 /* Headers */ = {
+		0081B07E85DB3F1C270A04A9BAC77AA5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45294E1FA5166AABDFDE8F3E0164E151 /* CitySearch-umbrella.h in Headers */,
+				5B74F37207113195BDB2F634537D1314 /* CitySearch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E5068E1CF9491E8132ACEDCA4388588 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09D8A7B2BCF55312BAE4D71662D8DA7 /* Core-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,19 +512,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A79676D653741C599D85F9D1F51402DC /* Headers */ = {
+		D78EA2C622EF65D3E2D7D305C3C91F12 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF89C7CAD61769851A93C71FB4524FAC /* Core-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6BBBCC5FB0CA63DC8AEFB99C06AFF1B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA176113DA6C31275A656FB4375E5949 /* SearchEngine-umbrella.h in Headers */,
+				4D78A11657A9B8C2293FD3A0C2CD7EF2 /* SearchEngine-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,12 +525,12 @@
 /* Begin PBXNativeTarget section */
 		045EA0CC8B1D13A2E99A2219A6EAFB1A /* Core */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C10F6A679BCCF4E38DE21928346CD490 /* Build configuration list for PBXNativeTarget "Core" */;
+			buildConfigurationList = 8070B9E21A1A821BBE56B5AC98E91569 /* Build configuration list for PBXNativeTarget "Core" */;
 			buildPhases = (
-				A79676D653741C599D85F9D1F51402DC /* Headers */,
-				1FA818F997BBF4CB12B12226935A6F37 /* Sources */,
-				191F5F74B2CE1208E67BB8A219E7D8AC /* Frameworks */,
-				B701094CCACFBF77BAB16D16055440AB /* Resources */,
+				1E5068E1CF9491E8132ACEDCA4388588 /* Headers */,
+				B1FBF30327FE37C2C586DBC5F1B65B13 /* Sources */,
+				3765B8DD419AD43B83C2EC9216E06EB0 /* Frameworks */,
+				F3A3E85A40D0AD66646A8AD9FAF72F54 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -513,17 +543,17 @@
 		};
 		232DB7ED97BB2B0FFE9B212B269D96FA /* SearchEngine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E8F13C8E52155BF2A7B3BDE7976856C /* Build configuration list for PBXNativeTarget "SearchEngine" */;
+			buildConfigurationList = 2C254BD12653A38AC93BDEB2725BC0EF /* Build configuration list for PBXNativeTarget "SearchEngine" */;
 			buildPhases = (
-				E6BBBCC5FB0CA63DC8AEFB99C06AFF1B /* Headers */,
-				10334FEDF8C1B2563FCB9BDD355ECD27 /* Sources */,
-				E8768146949FD65A969E2521CF2D2709 /* Frameworks */,
-				71A960FF237E3F4D7061A90CDD0AB66C /* Resources */,
+				D78EA2C622EF65D3E2D7D305C3C91F12 /* Headers */,
+				9B0A3AEB80F1DAA516DAABCA4A9D39B2 /* Sources */,
+				8222B9ACB44A052301985980473A3E8F /* Frameworks */,
+				74A69817C9499BA9C9DEDA20D143F062 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				04A40BAB26A676354010E78D4835C007 /* PBXTargetDependency */,
+				FACB82473D326E8A4517DA046A0E7DC0 /* PBXTargetDependency */,
 			);
 			name = SearchEngine;
 			productName = SearchEngine;
@@ -532,19 +562,19 @@
 		};
 		34746E57AED9933A998AD7FE7B3D6D58 /* CitySearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 008372D7E35E23D5DC94B60BCEE78B1F /* Build configuration list for PBXNativeTarget "CitySearch" */;
+			buildConfigurationList = D64B7BA538F36AFFED2759729ADA5590 /* Build configuration list for PBXNativeTarget "CitySearch" */;
 			buildPhases = (
-				360C970DA03DEAF502B5A11CA01D4394 /* Headers */,
-				4308C33345AF444C84A5A19D576C0FBF /* Sources */,
-				43419F2D5993FA8D99133202D640E3C8 /* Frameworks */,
-				884AA99CEE7A2CE5AE2616D7A60D391B /* Resources */,
+				0081B07E85DB3F1C270A04A9BAC77AA5 /* Headers */,
+				F89B0917824327505E2821D4F4E20622 /* Sources */,
+				C2A0071C6C1BC5BF1B585BCC14BAC3CC /* Frameworks */,
+				FDFF06FC0EFE167F01666E84A020F015 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1B75606D4DA2B19C82E380B84AE004C2 /* PBXTargetDependency */,
-				597D7287C74D2B2F0472EED364D46F1A /* PBXTargetDependency */,
-				B9010CB0A0AA1C1C7DAB6BE239235D2F /* PBXTargetDependency */,
+				5BBAB9FD3491E61E7BB0CF986F6A9EF7 /* PBXTargetDependency */,
+				231DB633F65D1DBE8D68D92792DFEF68 /* PBXTargetDependency */,
+				C43EE9AC510AA85B1889B0AAF3FCBD26 /* PBXTargetDependency */,
 			);
 			name = CitySearch;
 			productName = CitySearch;
@@ -563,9 +593,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				ABCEFC1E661C77A253EFCC75404DEF3F /* PBXTargetDependency */,
-				53EC449F7B048402B0F3575117568C21 /* PBXTargetDependency */,
-				4495C6D296C34D1E7F139D461DCE5958 /* PBXTargetDependency */,
+				A493F86F917056F80032CAE8C7299CF1 /* PBXTargetDependency */,
+				E250E8CC6D75CB94D13FD6600F61605D /* PBXTargetDependency */,
+				6A01C1E367657A26529BC83FF30B9F6F /* PBXTargetDependency */,
 			);
 			name = "Pods-BackbaseTest";
 			productName = Pods_BackbaseTest;
@@ -574,11 +604,11 @@
 		};
 		E8E4B0DF2B9658B7E1064491A826C1D8 /* CitySearch-CitySearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 790095FDCA86F12D8C4C9943DB0C96BC /* Build configuration list for PBXNativeTarget "CitySearch-CitySearch" */;
+			buildConfigurationList = 88F5D25A1D495CDDE87FC98E5ADAA0D3 /* Build configuration list for PBXNativeTarget "CitySearch-CitySearch" */;
 			buildPhases = (
-				1E6C0102051A415C5CBB00D2344235BA /* Sources */,
-				589614EA0AF2011DE8ECE8847FF59A7D /* Frameworks */,
-				7F226BE8954DD47C18708E07B0527BBE /* Resources */,
+				58307839506416283B731F64EDA3F530 /* Sources */,
+				A298C745F99F751BE71F2FD141CCE07F /* Frameworks */,
+				FFA51DC3AC5AF3440AA6F36AFDE94D60 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -591,11 +621,11 @@
 		};
 		EB990492FB4ECF07EADAABD059D6A829 /* SearchEngine-SearchEngine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C30414DF803B0CA592DF6CA8698B30F /* Build configuration list for PBXNativeTarget "SearchEngine-SearchEngine" */;
+			buildConfigurationList = 726815CAFC07EF39B6D8CC98A7FD83C2 /* Build configuration list for PBXNativeTarget "SearchEngine-SearchEngine" */;
 			buildPhases = (
-				F4E74550C9942251E20655B9802A13BE /* Sources */,
-				A9B7624B06F5ADE75221022E8246AA0A /* Frameworks */,
-				A783D1E988D402D2F8AB6C8CFBF70057 /* Resources */,
+				2037ED683B4639FC02EF1314C01D087C /* Sources */,
+				4A8CAF622EB6F89E2AFB22C6292419BC /* Frameworks */,
+				711E76900834B7ED07C8F06AA9393EED /* Resources */,
 			);
 			buildRules = (
 			);
@@ -639,42 +669,18 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		71A960FF237E3F4D7061A90CDD0AB66C /* Resources */ = {
+		711E76900834B7ED07C8F06AA9393EED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				533D5C3EA82D996793C101AED8D44830 /* SearchEngine-SearchEngine in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F226BE8954DD47C18708E07B0527BBE /* Resources */ = {
+		74A69817C9499BA9C9DEDA20D143F062 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D993325119629741ECB4D8FE3931F3E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		884AA99CEE7A2CE5AE2616D7A60D391B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F762912FA37F5BFD0B718EE0225576D0 /* CitySearch-CitySearch in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A783D1E988D402D2F8AB6C8CFBF70057 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EB2C89878937DEF7BC3062802B1A0C19 /* cities.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B701094CCACFBF77BAB16D16055440AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				6506BF0A4EE56D2E44D58EB72D294D77 /* SearchEngine-SearchEngine in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,54 +691,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3A3E85A40D0AD66646A8AD9FAF72F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFF06FC0EFE167F01666E84A020F015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EC86BD4D81C5C01D7AA275DC51B13D /* CitySearch-CitySearch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA51DC3AC5AF3440AA6F36AFDE94D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECC7E97DF52FCE4D9E3E1B0E0ADBC63 /* cities.json in Resources */,
+				F9021B449D73819F4FE987B49FA6827B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		10334FEDF8C1B2563FCB9BDD355ECD27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BC2999323F97A4FC0322D3CC376A443 /* CityModel.swift in Sources */,
-				7829FD46909F520ED9816E5D7AC19E65 /* Parser.swift in Sources */,
-				0D7600B26FAA55E7650FEFA6B4AE5D6B /* SearchEngine.swift in Sources */,
-				4837B9DC3B4E81295CD8D050CFFB4F7C /* SearchEngine-dummy.m in Sources */,
-				9B04C8704DC081AAF0695DBF20CF6544 /* SearchEngineBundle.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E6C0102051A415C5CBB00D2344235BA /* Sources */ = {
+		2037ED683B4639FC02EF1314C01D087C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FA818F997BBF4CB12B12226935A6F37 /* Sources */ = {
+		58307839506416283B731F64EDA3F530 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B15B9B19EF5165E08B7D032D1743E4B /* Binder.swift in Sources */,
-				3C3CAC7077ADA774D33B7EDB8BEE76BD /* ControllerType.swift in Sources */,
-				F29CF13D1640747354375EC5D2DCC610 /* CoordinatorType.swift in Sources */,
-				D09118B258C6C9627D0C22F63893BB43 /* Core-dummy.m in Sources */,
-				B4F4C84691866AE0E4DCCF0EE272FB59 /* UIView+NSLayoutAnchor.swift in Sources */,
-				596DBD95AA67D8235FAEC70E89EB964B /* ViewModelType.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4308C33345AF444C84A5A19D576C0FBF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63A68DB518F5E6D05055C565643EDEB5 /* CitySearch-dummy.m in Sources */,
-				A2F3E71AF0514A294E60F86644187BAF /* CitySearchBundle.swift in Sources */,
-				F33B78BEB9268FA512AD61C3DFCCD5FE /* CitySearchCell.swift in Sources */,
-				C19D1E17393A92C6DB1A266C933CDF85 /* CitySearchCellViewModel.swift in Sources */,
-				A4793F162740340300C0EDD9 /* CityDetailViewController.swift in Sources */,
-				A4793F14274033FB00C0EDD9 /* CityDetailViewModel.swift in Sources */,
-				720E99010947485735D429FF29C14689 /* CitySearchCoordinator.swift in Sources */,
-				5308E8B42DECEC4F410DBAB6380A1923 /* CitySearchViewController.swift in Sources */,
-				CDBBBFFFD30B25482D5529152BB3DA7A /* CitySearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,64 +740,114 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4E74550C9942251E20655B9802A13BE /* Sources */ = {
+		9B0A3AEB80F1DAA516DAABCA4A9D39B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D6161CCAF91B5D32888C89A370A3003 /* BinarySearchable.swift in Sources */,
+				2FE45B7D3CEFB7BC0F88FD3D4433AB79 /* SearchEngine.swift in Sources */,
+				F1D3914BBD55BB3C5072DE686DE0AD90 /* SearchEngine-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FBF30327FE37C2C586DBC5F1B65B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5320DA24E8FC37ED46E9D8AE31D170FD /* Binder.swift in Sources */,
+				048A9E6D7D6B7BC5D25BE5949C9FA9D5 /* ControllerType.swift in Sources */,
+				CBC64FFFB9D68DAAE8D703FC4FBB841B /* CoordinatorType.swift in Sources */,
+				743638430DFB261BC6E11A8299A246CA /* Core-dummy.m in Sources */,
+				6574139848C52A906BAA8B0F42AB91B4 /* Parser.swift in Sources */,
+				122F1BC39CD8696312ABE31A2CF4FC7E /* UIView+NSLayoutAnchor.swift in Sources */,
+				0E257675D1C155DDC30BDADB50AAF9E5 /* ViewModelType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89B0917824327505E2821D4F4E20622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A0763765E92CA5C427F52258D154AE /* CityDetailViewController.swift in Sources */,
+				968608AAD895E9BC1FA0406174897C39 /* CityDetailViewModel.swift in Sources */,
+				4E0157FCE09E7D704B51A3A4AB3A1CEA /* CityModel.swift in Sources */,
+				FC71A8DA6B09D403EAC8E4E903E8A6F6 /* CitySearch-dummy.m in Sources */,
+				4C11F00F7D9528D75B09AD207082A925 /* CitySearchBundle.swift in Sources */,
+				3CB0410F997A86AAB21F597A5836DE7D /* CitySearchCell.swift in Sources */,
+				0D94BFBCB2DD811B840A1C7FF64CEBFA /* CitySearchCellViewModel.swift in Sources */,
+				ACD31D5439F8588503D950BA7EA60B87 /* CitySearchCoordinator.swift in Sources */,
+				DC1EA873670D21E95731B367351D5866 /* CitySearchViewController.swift in Sources */,
+				63D3B71CCAD2323F6FE3D140818B7108 /* CitySearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04A40BAB26A676354010E78D4835C007 /* PBXTargetDependency */ = {
+		231DB633F65D1DBE8D68D92792DFEF68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "SearchEngine-SearchEngine";
-			target = EB990492FB4ECF07EADAABD059D6A829 /* SearchEngine-SearchEngine */;
-			targetProxy = 0381AD6BBC82791B153A64840DD1E24F /* PBXContainerItemProxy */;
+			name = Core;
+			target = 045EA0CC8B1D13A2E99A2219A6EAFB1A /* Core */;
+			targetProxy = 5F1E9F1C6AA46A3ABDEE235BE5757C6C /* PBXContainerItemProxy */;
 		};
-		1B75606D4DA2B19C82E380B84AE004C2 /* PBXTargetDependency */ = {
+		5BBAB9FD3491E61E7BB0CF986F6A9EF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CitySearch-CitySearch";
 			target = E8E4B0DF2B9658B7E1064491A826C1D8 /* CitySearch-CitySearch */;
-			targetProxy = 527B1F72AA4F60A0D9B1669954ECBC0F /* PBXContainerItemProxy */;
+			targetProxy = 5F0866E852F77DD46004623226140ACB /* PBXContainerItemProxy */;
 		};
-		4495C6D296C34D1E7F139D461DCE5958 /* PBXTargetDependency */ = {
+		6A01C1E367657A26529BC83FF30B9F6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SearchEngine;
 			target = 232DB7ED97BB2B0FFE9B212B269D96FA /* SearchEngine */;
-			targetProxy = 3424C969CAF327FBD8550F01A1F87E0C /* PBXContainerItemProxy */;
+			targetProxy = 46E0E0AED9E9A6E56DBE9AA0F287F125 /* PBXContainerItemProxy */;
 		};
-		53EC449F7B048402B0F3575117568C21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Core;
-			target = 045EA0CC8B1D13A2E99A2219A6EAFB1A /* Core */;
-			targetProxy = A06D597E211488CFF3253D17772F99D5 /* PBXContainerItemProxy */;
-		};
-		597D7287C74D2B2F0472EED364D46F1A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Core;
-			target = 045EA0CC8B1D13A2E99A2219A6EAFB1A /* Core */;
-			targetProxy = A71A979E203E479480E6554EB5ABB11A /* PBXContainerItemProxy */;
-		};
-		ABCEFC1E661C77A253EFCC75404DEF3F /* PBXTargetDependency */ = {
+		A493F86F917056F80032CAE8C7299CF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CitySearch;
 			target = 34746E57AED9933A998AD7FE7B3D6D58 /* CitySearch */;
-			targetProxy = D1FDB63450ABE6BAB54AAE087F9AFC7B /* PBXContainerItemProxy */;
+			targetProxy = C137D8B7B6C266CC4ECB9DC33232B122 /* PBXContainerItemProxy */;
 		};
-		B9010CB0A0AA1C1C7DAB6BE239235D2F /* PBXTargetDependency */ = {
+		C43EE9AC510AA85B1889B0AAF3FCBD26 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SearchEngine;
 			target = 232DB7ED97BB2B0FFE9B212B269D96FA /* SearchEngine */;
-			targetProxy = FF276C04B56B0747ED4F0EC18D08137F /* PBXContainerItemProxy */;
+			targetProxy = 7B437A329B5C48D306457AF8DE3913EC /* PBXContainerItemProxy */;
+		};
+		E250E8CC6D75CB94D13FD6600F61605D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Core;
+			target = 045EA0CC8B1D13A2E99A2219A6EAFB1A /* Core */;
+			targetProxy = CB3C7EFF98F2F6A5DB6E58CDE496273A /* PBXContainerItemProxy */;
+		};
+		FACB82473D326E8A4517DA046A0E7DC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SearchEngine-SearchEngine";
+			target = EB990492FB4ECF07EADAABD059D6A829 /* SearchEngine-SearchEngine */;
+			targetProxy = 09CD74AB537ABA0D5D03EFC243FCBEC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		118EE5E70C2177045A9F333AF25D7980 /* Debug */ = {
+		056F286719670E99C9B229CCBDEF1D68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA585D76DF52BE97B7DBF9837459C10 /* CitySearch.debug.xcconfig */;
+			baseConfigurationReference = A472CA274E21D5F1519BCC849ADE26A2 /* SearchEngine.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SearchEngine";
+				IBSC_MODULE = SearchEngine;
+				INFOPLIST_FILE = "Target Support Files/SearchEngine/ResourceBundle-SearchEngine-SearchEngine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = SearchEngine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3365867B55A5EE8A75894B9B5735432A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A472CA274E21D5F1519BCC849ADE26A2 /* SearchEngine.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -812,8 +858,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CitySearch/CitySearch-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CitySearch/CitySearch-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SearchEngine/SearchEngine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SearchEngine/SearchEngine-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -821,9 +867,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CitySearch/CitySearch.modulemap";
-				PRODUCT_MODULE_NAME = CitySearch;
-				PRODUCT_NAME = CitySearch;
+				MODULEMAP_FILE = "Target Support Files/SearchEngine/SearchEngine.modulemap";
+				PRODUCT_MODULE_NAME = SearchEngine;
+				PRODUCT_NAME = SearchEngine;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -834,9 +880,61 @@
 			};
 			name = Debug;
 		};
-		17BA2ED0BE88EEF9AF3D8E1330267045 /* Release */ = {
+		400941A154246248C68FFC855359AF79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FC0622F78DEB1F3689AA93D57847FE3 /* Core.release.xcconfig */;
+			baseConfigurationReference = F1DC827293045AEFF785609CD64413A1 /* SearchEngine.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SearchEngine/SearchEngine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SearchEngine/SearchEngine-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SearchEngine/SearchEngine.modulemap";
+				PRODUCT_MODULE_NAME = SearchEngine;
+				PRODUCT_NAME = SearchEngine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46FD6A989EF02DFB80B905AB0169BB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF970E9B43F8845F84F672606C8F3FB /* CitySearch.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CitySearch";
+				IBSC_MODULE = CitySearch;
+				INFOPLIST_FILE = "Target Support Files/CitySearch/ResourceBundle-CitySearch-CitySearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = CitySearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50FBD3C74E472A448537C203D36F5CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FACEF91174F15F00FB9D62004B747B5 /* Core.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -870,9 +968,9 @@
 			};
 			name = Release;
 		};
-		1DA515CDB08505220DDD93D2B5148AF1 /* Release */ = {
+		84225603D111BBD7D153B51A2B192979 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C66821275C01BF2054DFF8FBD8AC9F51 /* CitySearch.release.xcconfig */;
+			baseConfigurationReference = 92E0EDB7000072A084F4E653AF61B3D7 /* CitySearch.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -903,109 +1001,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		22BC3ACA22CF02EE9413187FA140F1D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F8F61CE64FE0D08062213E8C198B353 /* SearchEngine.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SearchEngine/SearchEngine-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SearchEngine/SearchEngine-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SearchEngine/SearchEngine.modulemap";
-				PRODUCT_MODULE_NAME = SearchEngine;
-				PRODUCT_NAME = SearchEngine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		348A476BC3182C0012CD30CCD29F618C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7FA62BA736FD255BE410971E7BAA280 /* SearchEngine.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SearchEngine/SearchEngine-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SearchEngine/SearchEngine-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SearchEngine/SearchEngine.modulemap";
-				PRODUCT_MODULE_NAME = SearchEngine;
-				PRODUCT_NAME = SearchEngine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4B83EE4503A5BEF316CE1A00170A86F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA585D76DF52BE97B7DBF9837459C10 /* CitySearch.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CitySearch";
-				IBSC_MODULE = CitySearch;
-				INFOPLIST_FILE = "Target Support Files/CitySearch/ResourceBundle-CitySearch-CitySearch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = CitySearch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		5A8980A9E40E120EE0F6BEEAF7A7D3BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F8F61CE64FE0D08062213E8C198B353 /* SearchEngine.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SearchEngine";
-				IBSC_MODULE = SearchEngine;
-				INFOPLIST_FILE = "Target Support Files/SearchEngine/ResourceBundle-SearchEngine-SearchEngine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = SearchEngine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1075,19 +1070,38 @@
 			};
 			name = Debug;
 		};
-		92502CCC4F4E57534315E49C694D1114 /* Debug */ = {
+		8DEBB077E830669B64F4CA5214232CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7FA62BA736FD255BE410971E7BAA280 /* SearchEngine.debug.xcconfig */;
+			baseConfigurationReference = CCF970E9B43F8845F84F672606C8F3FB /* CitySearch.debug.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SearchEngine";
-				IBSC_MODULE = SearchEngine;
-				INFOPLIST_FILE = "Target Support Files/SearchEngine/ResourceBundle-SearchEngine-SearchEngine-Info.plist";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CitySearch/CitySearch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CitySearch/CitySearch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = SearchEngine;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CitySearch/CitySearch.modulemap";
+				PRODUCT_MODULE_NAME = CitySearch;
+				PRODUCT_NAME = CitySearch;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1191,9 +1205,9 @@
 			};
 			name = Release;
 		};
-		C84C2256829588605D1A7A8E301FE599 /* Release */ = {
+		C42B146CBECA3762B11CF1AB676584DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C66821275C01BF2054DFF8FBD8AC9F51 /* CitySearch.release.xcconfig */;
+			baseConfigurationReference = 92E0EDB7000072A084F4E653AF61B3D7 /* CitySearch.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CitySearch";
 				IBSC_MODULE = CitySearch;
@@ -1207,9 +1221,25 @@
 			};
 			name = Release;
 		};
-		D005D9AC92F5115898ADB0BE1BB78453 /* Debug */ = {
+		D7FF198DB22BB396DD67696D19EEBC82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8966E08F7A5F1BE0A9F14443F04B823E /* Core.debug.xcconfig */;
+			baseConfigurationReference = F1DC827293045AEFF785609CD64413A1 /* SearchEngine.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SearchEngine";
+				IBSC_MODULE = SearchEngine;
+				INFOPLIST_FILE = "Target Support Files/SearchEngine/ResourceBundle-SearchEngine-SearchEngine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = SearchEngine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DE54B73DD13A6B8CF7469D41D181AACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAC3FCC8FC4A1E58E4F52B72629F3E76 /* Core.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1282,20 +1312,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		008372D7E35E23D5DC94B60BCEE78B1F /* Build configuration list for PBXNativeTarget "CitySearch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				118EE5E70C2177045A9F333AF25D7980 /* Debug */,
-				1DA515CDB08505220DDD93D2B5148AF1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		04103DFC4715B161DA314F64CB49AA30 /* Build configuration list for PBXNativeTarget "Pods-BackbaseTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC8F39C71391351988666BD33BC4B3DC /* Debug */,
 				C358EA4CFFE58BF5EE4097574CB25C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C254BD12653A38AC93BDEB2725BC0EF /* Build configuration list for PBXNativeTarget "SearchEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3365867B55A5EE8A75894B9B5735432A /* Debug */,
+				400941A154246248C68FFC855359AF79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1309,38 +1339,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C30414DF803B0CA592DF6CA8698B30F /* Build configuration list for PBXNativeTarget "SearchEngine-SearchEngine" */ = {
+		726815CAFC07EF39B6D8CC98A7FD83C2 /* Build configuration list for PBXNativeTarget "SearchEngine-SearchEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92502CCC4F4E57534315E49C694D1114 /* Debug */,
-				5A8980A9E40E120EE0F6BEEAF7A7D3BA /* Release */,
+				056F286719670E99C9B229CCBDEF1D68 /* Debug */,
+				D7FF198DB22BB396DD67696D19EEBC82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E8F13C8E52155BF2A7B3BDE7976856C /* Build configuration list for PBXNativeTarget "SearchEngine" */ = {
+		8070B9E21A1A821BBE56B5AC98E91569 /* Build configuration list for PBXNativeTarget "Core" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				348A476BC3182C0012CD30CCD29F618C /* Debug */,
-				22BC3ACA22CF02EE9413187FA140F1D6 /* Release */,
+				DE54B73DD13A6B8CF7469D41D181AACD /* Debug */,
+				50FBD3C74E472A448537C203D36F5CBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		790095FDCA86F12D8C4C9943DB0C96BC /* Build configuration list for PBXNativeTarget "CitySearch-CitySearch" */ = {
+		88F5D25A1D495CDDE87FC98E5ADAA0D3 /* Build configuration list for PBXNativeTarget "CitySearch-CitySearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B83EE4503A5BEF316CE1A00170A86F9 /* Debug */,
-				C84C2256829588605D1A7A8E301FE599 /* Release */,
+				46FD6A989EF02DFB80B905AB0169BB3F /* Debug */,
+				C42B146CBECA3762B11CF1AB676584DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C10F6A679BCCF4E38DE21928346CD490 /* Build configuration list for PBXNativeTarget "Core" */ = {
+		D64B7BA538F36AFFED2759729ADA5590 /* Build configuration list for PBXNativeTarget "CitySearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D005D9AC92F5115898ADB0BE1BB78453 /* Debug */,
-				17BA2ED0BE88EEF9AF3D8E1330267045 /* Release */,
+				8DEBB077E830669B64F4CA5214232CC0 /* Debug */,
+				84225603D111BBD7D153B51A2B192979 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
